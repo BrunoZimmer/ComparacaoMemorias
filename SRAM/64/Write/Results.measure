@@ -1,0 +1,34 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  10:26:02 PM, Thur Mar 18, 2021
+design             :  * SRAM memory core
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  LeakStat
+Analysis Type      :  dc
+TotalStaticLeakage = 2.83618e-11 
+
+
+Swept Measurements :
+Measurement Name   :  TmpWL-meas_search
+Analysis Type      :  tran
+Ten_Q              TpWL       @ 1.41232e-09   =  0.963424     
+Ten_QB             TpWL       @ 1.41232e-09   =  0.0499989     
+Tp_wl              TpWL       @ 1.41232e-09   =  1.41232e-09     
+Tp_wrt_btl         TpWL       @ 1.41232e-09   =  8.76784e-11     
+
+
+Measurement Name   :  TmpEn-meas_search
+Analysis Type      :  tran
+Ten_Q1             TpEn       @ 1.09649e-09   =  0.998951     
+Ten_QB1            TpEn       @ 1.09649e-09   =  0.05     
+Tp_En              TpEn       @ 1.09649e-09   =  1.09649e-09     
+Tp_Write_total     TpEn       @ 1.09649e-09   =  4.03514e-10     
+Tp_contam          TpEn       @ 1.09649e-09   =  3.15836e-10     
+
+
+
+
+

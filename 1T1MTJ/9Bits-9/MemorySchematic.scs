@@ -1,0 +1,80 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+*.include 'MTJT.spi'
+.include 'TRANSGATE.spi'
+.include '1T1MBitCell.spi'
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param cap = 0.5f
+
+.param Vvdd = 1.6
+
+.param Vgnd = 0
+
+.param Vread = 0.8
+
+.param TpWord = 0.5
+.param TpWrite = 0.9n
+.param TpRead = 0.1n
+.param TpPulse = 1n
+
+* Wordlines controller
+Vwl1 WL1 Gnd PWL 0 'Vgnd'
+Vwl2 WL2 Gnd PWL 0 'Vgnd'
+Vwl3 WL3 Gnd PWL 0 'Vgnd' '2n-1p' 'Vgnd' '2n' 'Vvdd' 'TpWrite+5n-1p' 'Vvdd' 'TpWrite+5n' 'Vgnd' 'TpWrite+5n+TpPulse' 'Vgnd' 'TpWrite+5n+TpPulse+1p' 'Vvdd' '8n-1p+TpRead' 'Vvdd' '8n+TpRead' 'Vgnd' '8n+0.8n' 'Vgnd' '8n+0.8n+1p' 'Vvdd'
+
+*Bitlines controller
+Vbl1 BL1 Gnd PWL 0 'Vgnd'
+Vbl2 BL2 Gnd PWL 0 'Vgnd' 
+Vbl3 BL3 Gnd PWL 0 'Vgnd' 'TpWrite+5n-1p' 'Vgnd' 'TpWrite+5n' 'Vvdd' 'TpWrite+5n+TpPulse' 'Vvdd' 'TpWrite+5n+TpPulse+1p' 'Vgnd'
+
+*SourceLine Controller
+Vsl1 SL1 Gnd PWL 0 'Vgnd'
+Vsl2 SL2 Gnd PWL 0 'Vgnd'
+Vsl3 SL3 Gnd PWL 0 'Vgnd' 'TpRead-1p' 'Vgnd' 'TpRead' 'Vvdd' 'TpRead+TpPulse' 'Vvdd' 'TpRead+TpPulse+1p' 'Vgnd' '8n-1p+TpRead' 'Vgnd' '8n+TpRead' 'Vread' '8n+0.8n' 'Vread' '8n+0.8n+1p' 'Vgnd'
+
+Vbl1en ENBl1 Gnd PWL 0 'Vvdd'
+Vbl2en ENBl2 Gnd PWL 0 'Vgnd'
+Vbl3en ENBl3 Gnd PWL 0 'Vgnd'
+
+Vdd Vdd Gnd 'Vvdd' 
+
+* Bitcells
+X1 NM1 SL1 WL1 BCTM
+Vtest1 BL1 NM1 0
+
+X2 NM2 SL2 WL1 BCTM
+Vtest2 BL2 NM2 0
+
+X3 NM3 SL3 WL1 BCTM
+Vtest3 BL3 NM3 0
+
+X4 NM4 SL1 WL2 BCTM
+Vtest4 BL1 NM4 0
+
+X5 NM5 SL2 WL2 BCTM
+Vtest5 BL2 NM5 0
+
+X6 NM6 SL3 WL2 BCTM
+Vtest6 BL3 NM6 0
+
+X7 NM7 SL1 WL3 BCTM
+Vtest7 BL1 NM7 0
+
+X8 NM8 SL2 WL3 BCTM
+Vtest8 BL2 NM8 0
+
+X9 NM9 SL3 WL3 BCTM
+Vtest9 BL3 NM9 0
+
+*Bitlines Capacitance
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+Cbl3 BL3 Gnd 'cap'
+
+.TRAN 1p 10n
+
+.option rawfmt="psfbin"

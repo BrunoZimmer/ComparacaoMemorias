@@ -1,0 +1,30 @@
+* pp
+
+alias measurement TmpWL{
+	run tran (stop = 2.5n)
+	export real Ten_Q = V(BL4)@1.5n
+	export real Ten_QB = V(BLB4)@1.5n
+
+	export real Tp_wl = TpWl
+	export real Tread_bl = 1.5n - TpWl
+}
+
+alias measurement TmpPre{
+	run tran (stop = 2.5n)
+	export real Ten_Q1 = V(BL4)@TmpWL->Tp_wl
+	export real Ten_QB1 = V(BLB4)@TmpWL->Tp_wl
+
+	export real Tp_Pre = TpPre
+	export real Tpre_bl = TpWl - TpPre
+
+	export real Tp_Read_Total = Tpre_bl + 1.5n - TpWl
+
+}
+search TpWl from binary(start=0.8n, stop=1.499n, tol=1f){
+	run TmpWL
+}while (TmpWL->Ten_Q > 0.9 && TmpWL->Ten_QB < 0.1)
+
+search TpPre from binary(start=0.1n, stop=(TpWl-2p), tol=1f){
+	run TmpPre
+}while (TmpPre->Ten_Q1 > 0.9 && TmpPre->Ten_QB1 > 0.9)
+

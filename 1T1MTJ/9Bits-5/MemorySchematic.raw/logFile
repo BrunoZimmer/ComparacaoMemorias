@@ -1,0 +1,332 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Wed Jan 27 08:45:51 2021"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "8:45:51 AM, Wed Jan 27, 2021"
+"design" "* Crossbar one bit"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"TmpWriteBit-search" "analysisInst" (
+"search"
+"TmpWriteBit.search"
+"PSF"
+""
+("TpWrite")
+"parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+)
+
+"TmpWriteBit_meas-meas_search" "analysisInst" (
+"meas_search"
+"TmpWriteBit_meas.meas_search"
+"PSF"
+""
+("TpWrite")
+"parent"
+) PROP(
+"sweep_tree_type" "sweepNode"
+"data_type" "swept_scalar"
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 9.00000e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 7.00000e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.00000e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.50000e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.25000e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.12500e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.18750e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.21875e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23438e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.24219e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23828e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23633e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23535e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23486e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23511e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23499e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23492e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23489e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23491e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23492e-10
+)
+
+"TmpWriteBit-000_TmpWriteBit-tran" "analysisInst" (
+"tran"
+"TmpWriteBit-000_TmpWriteBit.tran.tran"
+"PSF"
+"TmpWriteBit-search"
+("time")
+"Transient Analysis `TmpWriteBit-000_TmpWriteBit': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23492e-10
+)
+
+"TmpWriteBit-search-000-meas_tran" "analysisInst" (
+"meas_tran"
+"TmpWriteBit-search-000.meas_tran"
+"PSF"
+"TmpWriteBit_meas-meas_search"
+()
+"Measurement Results for TmpWriteBit Analysis tran"
+) PROP(
+"sweep_tree_type" "leafNode"
+"TpWrite" 8.23492e-10
+)
+
+END

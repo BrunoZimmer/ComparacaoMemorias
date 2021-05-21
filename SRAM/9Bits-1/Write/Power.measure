@@ -1,0 +1,14 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  5:22:06 PM, Mon Jan 25, 2021
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Energy
+Analysis Type      :  tran
+EnergyWrite     = -2.00446e-20 
+EnergyWriteLeakage = -2.86068e-15 
+
+

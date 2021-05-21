@@ -1,0 +1,60 @@
+*Memoria de uma bitcell
+
+simulator lang=spice
+
+.include 'TRISTATE.spi'
+.include 'INV.spi'
+.include 'PassTransistor.spi'
+.include '45nm_LP.pm'
+
+.param VPre = 1
+
+.param TpEn = 0.5n
+.param TpWl = 1n
+
+.param cap = 15f
+
+Vwl WL Gnd3 PWL 0 0 '(TpWl)' 0 '(TpWl+1p)' 1 (1.5n+2p) 1 (1.5n+3p) 0
+Vwdb WDB Gnd2 1
+Vwd WD Gnd1 0
+*En liga em 1  ENB em 0
+Venb ENB Gnd PWL 0 1 '(TpEn-1p)' 1 'TpEn' 0 1.5n 0 (1.5n+1p) 1 
+Ven EN Gnd PWL 0 0 '(TpEn-1p)' 0 'TpEn' 1 1.5n 1 (1.5n+1p) 0 
+Vpre PRE Gnd4 PWL 0 1 
+
+Vvdd Vvdd Gnd 'VPre'
+
+Vdd Vdd Gnd 1
+Vgnd Gnd 0 0
+Vgnd1 Gnd1 0 0
+Vgnd2 Gnd2 0 0
+Vgnd3 Gnd3 0 0
+Vgnd4 Gnd4 0 0
+Vgnd5 Gnd5 0 0
+
+*Bitcell
+*Inversor A Y VDD VSS 
+X0 Q QB Vdd Gnd INV
+X1 QB Q Vdd Gnd INV
+*Transistor Drain Gate Source Bulk
+M_i_0 BL WL Q Gnd NMOS_VTL W=0.415000U L=0.050000U
+M_i_1 BLB WL QB Gnd NMOS_VTL W=0.415000U L=0.050000U
+
+*Write cell
+*TRISTATE A Y EN ENB VDD VSS 
+X3 WD BL EN ENB Vdd Gnd TI
+X2 WDB BLB EN ENB Vdd Gnd TI
+
+*Pre Charge
+M_i_2 BL PRE Vvdd Vdd PMOS_VTL W=0.630000U L=0.050000U
+M_i_3 BLB PRE Vvdd Vdd PMOS_VTL W=0.630000U L=0.050000U
+M_i_4 BL PRE BLB Vdd PMOS_VTL W=0.630000U L=0.050000U
+
+*Bitlines Capacitance
+Cbl BL Gnd 'cap'
+Cblb BLB Gnd 'cap'
+.TRAN 100p 4n
+
+.option method=trap
+.option rawfmt="psfbin"
+.IC V(Q)=0 V(QB)=1 V(BL)=0 V(BLB)=1

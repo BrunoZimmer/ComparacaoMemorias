@@ -1,0 +1,100 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Jan 25 15:59:07 2021"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "3:59:07 PM, Mon Jan 25, 2021"
+"design" "* Crossbar one bit"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"PowerRd-tran" "analysisInst" (
+"tran"
+"PowerRd.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerRd': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerRd-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerRd.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerRd Analysis tran"
+)
+"LeakRd-tran" "analysisInst" (
+"tran"
+"LeakRd.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `LeakRd': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"LeakRd-meas_tran" "analysisInst" (
+"meas_tran"
+"LeakRd.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for LeakRd Analysis tran"
+)
+"PowerWrt-tran" "analysisInst" (
+"tran"
+"PowerWrt.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerWrt': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerWrt-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerWrt.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerWrt Analysis tran"
+)
+"LeakWrt-tran" "analysisInst" (
+"tran"
+"LeakWrt.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `LeakWrt': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"LeakWrt-meas_tran" "analysisInst" (
+"meas_tran"
+"LeakWrt.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for LeakWrt Analysis tran"
+)
+END

@@ -1,0 +1,17 @@
+
+alias measurement LeakStatic{
+	run dc (oppoint='logfile)
+
+	real Corrente1 = I(Vtest1)
+	real Corrente2 = I(Vtest2)
+	real Corrente3 = I(Vtest3)
+	real Corrente4 = I(Vtest4)
+	real Corrente6 = I(Vtest6)
+	real Corrente7 = I(Vtest7)
+	real Corrente8 = I(Vtest8)
+	real Corrente9 = I(Vtest9)
+
+	export real TotalLeakage = Corrente1 + Corrente2 + Corrente3 + Corrente4 + Corrente6 + Corrente7 + Corrente8 + Corrente9
+}
+
+run LeakStatic

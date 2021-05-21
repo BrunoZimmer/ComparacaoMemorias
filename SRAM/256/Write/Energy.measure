@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  11:05:18 PM, Thur Mar 18, 2021
+design             :  * SRAM memory core
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  LeakWrt
+Analysis Type      :  tran
+EnergyLeakWrite = 3.69642e-17 
+
+
+Measurement Name   :  PowerWrt
+Analysis Type      :  tran
+EnergyWrite     = -8.13727e-18 
+
+

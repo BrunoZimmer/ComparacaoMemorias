@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* Crossbar one bit'
+chargeIWr EnergyWrite PowerWrite alter# 
+3.0684e-13 4.90945e-13 9.81889e-23 2 
+

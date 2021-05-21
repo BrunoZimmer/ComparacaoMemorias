@@ -1,0 +1,90 @@
+*Power
+
+alias measurement PowerRd{
+	run tran (stop = 4n)
+
+	real chargeR = integ(sig=I(Vtest9), from=1.7n, to=2n )
+	export real EnergyRead= abs(chargeR*Vhb)
+	export real PowerRead= EnergyRead*3n
+}
+
+
+alias measurement LeakRd{
+	run tran (stop = 4n)
+
+	real chargeW1 = integ(sig=I(Vtest2), from=1.7n, to=2n  )
+	real Energy1= abs(chargeW1*Vb)
+
+	real chargeW2 = integ(sig=I(Vtest3), from=1.7n, to=2n )
+	real Energy2= abs(chargeW2*Vb)
+
+	real chargeW3 = integ(sig=I(Vtest4), from=1.7n, to=2n )
+	real Energy3= abs(chargeW3*Vb)
+
+	real chargeW4 = integ(sig=I(Vtest5), from=1.7n, to=2n )
+	real Energy4= abs(chargeW4*Vb)
+
+	real chargeW5 = integ(sig=I(Vtest6), from=1.7n, to=2n )
+	real Energy5= abs(chargeW5*Vb)
+
+	real chargeW6 = integ(sig=I(Vtest7), from=1.7n, to=2n )
+	real Energy6= abs(chargeW6*Vb)
+
+	real chargeW7 = integ(sig=I(Vtest8), from=1.7n, to=2n )
+	real Energy7= abs(chargeW7*Vb)
+
+	real chargeW8 = integ(sig=I(Vtest1), from=1.7n, to=2n )
+	real Energy8= abs(chargeW8*Vb)
+
+
+	export real LeakEnergyRd= Energy1 + Energy2 + Energy3 + Energy4 + Energy5 + Energy6 + Energy7 + Energy8
+	export real LeakPowerRd =  LeakEnergyRd*3n
+
+}
+alias measurement PowerWrt{
+	run tran (stop = 5n)
+
+	real chargeW = integ(sig=I(Vtest9), from=2.7n, to=3n )
+	export real EnergyWrite = abs(chargeW*Vb)
+	export real PowerWrite =  EnergyWrite*3n
+
+}
+
+alias measurement LeakWrt{
+	run tran (stop = 5n)
+
+	real chargeW1 = integ(sig=I(Vtest2), from=2.7n, to=3n )
+	real Energy1= abs(chargeW1*Vb)
+
+	real chargeW2 = integ(sig=I(Vtest3), from=2.7n, to=3n )
+	real Energy2= abs(chargeW2*Vb)
+
+	real chargeW3 = integ(sig=I(Vtest4), from=2.7n, to=3n )
+	real Energy3= abs(chargeW3*Vb)
+
+	real chargeW4 = integ(sig=I(Vtest5), from=2.7n, to=3n )
+	real Energy4= abs(chargeW4*Vb)
+
+	real chargeW5 = integ(sig=I(Vtest6), from=2.7n, to=3n )
+	real Energy5= abs(chargeW5*Vb)
+
+	real chargeW6 = integ(sig=I(Vtest7), from=2.7n, to=3n )
+	real Energy6= abs(chargeW6*Vb)
+
+	real chargeW7 = integ(sig=I(Vtest8), from=2.7n, to=3n )
+	real Energy7= abs(chargeW7*Vb)
+
+	real chargeW8 = integ(sig=I(Vtest1), from=2.7n, to=3n )
+	real Energy8= abs(chargeW8*Vb)
+
+
+	export real LeakEnergyWrt=Energy1 + Energy2 + Energy3 + Energy4 + Energy5 + Energy6 + Energy7 + Energy8
+	export real LeakPowerWrt =  LeakEnergyWrt*3n
+
+}
+run PowerRd
+run LeakRd
+
+run PowerWrt
+run LeakWrt
+

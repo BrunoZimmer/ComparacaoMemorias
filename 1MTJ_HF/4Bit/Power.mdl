@@ -1,0 +1,60 @@
+*Power
+
+alias measurement PowerRd{
+	run tran (stop = 4n)
+
+	real chargeR = integ(sig=I(Vx1), from=1.7n, to=2n )
+	export real EnergyRead= abs(chargeR*Vhb)
+	export real PowerRead= EnergyRead*3n
+}
+
+
+alias measurement LeakRd{
+	run tran (stop = 4n)
+
+	real chargeW1 = integ(sig=I(Vx2), from=1.7n, to=2n  )
+	real Energy1= abs(chargeW1*Vb)
+
+	real chargeW2 = integ(sig=I(Vx3), from=1.7n, to=2n )
+	real Energy2= abs(chargeW2*Vb)
+
+	real chargeW3 = integ(sig=I(Vx4), from=1.7n, to=2n )
+	real Energy3= abs(chargeW3*Vb)
+
+
+	export real LeakEnergyRd= Energy1 + Energy2 + Energy3
+	export real LeakPowerRd =  LeakEnergyRd*3n
+
+}
+alias measurement PowerWrt{
+	run tran (stop = 4n)
+
+	real chargeW = integ(sig=I(Vx1), from=2.7n, to=3n )
+	export real EnergyWrite = abs(chargeW*Vb)
+	export real PowerWrite =  EnergyWrite*3n
+
+}
+
+alias measurement LeakWrt{
+	run tran (stop = 4n)
+
+	real chargeW1 = integ(sig=I(Vx2), from=2.7n, to=3n )
+	real Energy1= abs(chargeW1*Vb)
+
+	real chargeW2 = integ(sig=I(Vx3), from=2.7n, to=3n )
+	real Energy2= abs(chargeW2*Vb)
+
+	real chargeW3 = integ(sig=I(Vx4), from=2.7n, to=3n )
+	real Energy3= abs(chargeW3*Vb)
+
+
+	export real LeakEnergyWrt= Energy1 + Energy2 + Energy3
+	export real LeakPowerWrt =  LeakEnergyWrt*3n
+
+}
+run PowerRd
+run LeakRd
+
+run PowerWrt
+run LeakWrt
+

@@ -1,0 +1,256 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+.include 'TRANSGATE.spi'
+
+
+.param cap = 51f
+
+.param Vb = 1.6
+
+.param Vnb = 0
+
+.param Vvdd = Vb
+
+.param res = 10k
+
+.param Vhb = Vb/2
+
+.param Vread = Vb
+
+.param Tpwl = 0.7n
+.param Tpbl = 0.7n
+.param TpRead = 1.7n
+.param TpWrite = 2.7n
+
+
+Vwl1 WL1T Gnd PWL 0 'Vhb'
+Vwl2 WL2T Gnd PWL 0 'Vhb'
+Vwl3 WL3T Gnd PWL 0 'Vhb'
+Vwl4 WL4T Gnd PWL 0 'Vhb' '(Tpwl-1p)' 'Vhb' 'Tpwl' 'Vb' '(Tpwl+0.3n-1p)' 'Vb' '(Tpwl+0.3n)' 'Vhb' 'TpRead' 'Vhb' '(TpRead+1p)' 'Vread' '(TpRead+0.3n-1p)' 'Vread' '(TpRead+0.3n)' 'Vhb' '(TpWrite-1p)' 'Vhb' '(TpWrite)' 'Vnb' '(TpWrite+0.5n-1p)' 'Vnb' '(TpWrite+0.5n)' 'Vhb' '(3n+Tpwl)' 'Vhb' '(3n+Tpwl+1p)' 'Vread' '(3n+Tpwl+0.3n-1p)' 'Vread' '(3n+Tpwl+0.3n)' 'Vhb'
+Vwl5 WL5T Gnd PWL 0 'Vhb'
+Vwl6 WL6T Gnd PWL 0 'Vhb'
+Vwl7 WL7T Gnd PWL 0 'Vhb'
+Vwl8 WL8T Gnd PWL 0 'Vhb'
+
+
+Vbl1 BL1T Gnd PWL 0 'Vhb'
+Vbl2 BL2T Gnd PWL 0 'Vhb'
+Vbl3 BL3T Gnd PWL 0 'Vhb'
+Vbl4 BL4T Gnd PWL 0 'Vhb' '(Tpbl-1p)' 'Vhb' 'Tpbl' 'Vnb' '(Tpbl+0.3n-1p)' 'Vnb' '(Tpbl+0.3n)' 'Vhb' '(TpWrite-1p)' 'Vhb' '(TpWrite)' 'Vb' '(TpWrite+0.5n-1p)' 'Vb' '(TpWrite+0.5n)' 'Vhb'
+Vbl5 BL5T Gnd PWL 0 'Vhb'
+Vbl6 BL6T Gnd PWL 0 'Vhb'
+Vbl7 BL7T Gnd PWL 0 'Vhb'
+Vbl8 BL8T Gnd PWL 0 'Vhb'
+
+Vbl1en ENBl1 Gnd PWL 0 'Vnb'
+Vbl2en ENBl2 Gnd PWL 0 'Vnb'
+Vbl3en ENBl3 Gnd PWL 0 'Vnb'
+Vbl4en ENBl4 Gnd PWL 0 'Vb'
+Vbl5en ENBl5 Gnd PWL 0 'Vnb'
+Vbl6en ENBl6 Gnd PWL 0 'Vnb'
+Vbl7en ENBl7 Gnd PWL 0 'Vnb'
+Vbl8en ENBl8 Gnd PWL 0 'Vnb'
+
+Vwlen ENWl Gnd PWL 0 'Vnb'
+Vwlen1 ENWl1 Gnd PWL 0 'Vb'
+
+Vvdd Vdd Gnd 'Vvdd'
+
+
+X514 WL1T WL1 ENWl Vdd Gnd TG
+X515 WL2T WL2 ENWl Vdd Gnd TG
+X516 WL3T WL3 ENWl Vdd Gnd TG
+X517 WL4T WL4 ENWl Vdd Gnd TG
+X518 WL5T WL5 ENWl Vdd Gnd TG
+X519 WL6T WL6 ENWl Vdd Gnd TG
+X520 WL7T WL7 ENWl Vdd Gnd TG
+X521 WL8T WL8 ENWl1 Vdd Gnd TG
+X522 WL9T WL9 ENWl Vdd Gnd TG
+X523 WL10T WL10 ENWl Vdd Gnd TG
+X524 WL11T WL11 ENWl Vdd Gnd TG
+X525 WL12T WL12 ENWl Vdd Gnd TG
+X526 WL13T WL13 ENWl Vdd Gnd TG
+X527 WL14T WL14 ENWl Vdd Gnd TG
+X528 WL15T WL15 ENWl Vdd Gnd TG
+X529 WL16T WL16 ENWl Vdd Gnd TG
+
+X599 BL1T BL1 ENBl1 Vdd Gnd TG
+X590 BL2T BL2 ENBl2 Vdd Gnd TG
+X591 BL3T BL3 ENBl3 Vdd Gnd TG
+X592 BL4T BL4 ENBl4 Vdd Gnd TG
+X593 BL5T BL5 ENBl5 Vdd Gnd TG
+X594 BL6T BL6 ENBl6 Vdd Gnd TG
+X595 BL7T BL7 ENBl7 Vdd Gnd TG
+X596 BL8T BL8 ENBl8 Vdd Gnd TG
+
+
+* Bitcell
+
+X1 WL1 NM1 MTJT
+Vtest1 BL1 NM1 0
+X2 WL2 NM2 MTJT
+Vtest2 BL1 NM2 0
+X3 WL3 NM3 MTJT
+Vtest3 BL1 NM3 0
+X4 WL4 NM4 MTJT
+Vtest4 BL1 NM4 0
+X5 WL5 NM5 MTJT
+Vtest5 BL1 NM5 0
+X6 WL6 NM6 MTJT
+Vtest6 BL1 NM6 0
+X7 WL7 NM7 MTJT
+Vtest7 BL1 NM7 0
+X8 WL8 NM8 MTJT
+Vtest8 BL1 NM8 0
+X9 WL1 NM9 MTJT
+Vtest9 BL2 NM9 0
+X10 WL2 NM10 MTJT
+Vtest10 BL2 NM10 0
+X11 WL3 NM11 MTJT
+Vtest11 BL2 NM11 0
+X12 WL4 NM12 MTJT
+Vtest12 BL2 NM12 0
+X13 WL5 NM13 MTJT
+Vtest13 BL2 NM13 0
+X14 WL6 NM14 MTJT
+Vtest14 BL2 NM14 0
+X15 WL7 NM15 MTJT
+Vtest15 BL2 NM15 0
+X16 WL8 NM16 MTJT
+Vtest16 BL2 NM16 0
+X17 WL1 NM17 MTJT
+Vtest17 BL3 NM17 0
+X18 WL2 NM18 MTJT
+Vtest18 BL3 NM18 0
+X19 WL3 NM19 MTJT
+Vtest19 BL3 NM19 0
+X20 WL4 NM20 MTJT
+Vtest20 BL3 NM20 0
+X21 WL5 NM21 MTJT
+Vtest21 BL3 NM21 0
+X22 WL6 NM22 MTJT
+Vtest22 BL3 NM22 0
+X23 WL7 NM23 MTJT
+Vtest23 BL3 NM23 0
+X24 WL8 NM24 MTJT
+Vtest24 BL3 NM24 0
+X25 WL1 NM25 MTJT
+Vtest25 BL4 NM25 0
+X26 WL2 NM26 MTJT
+Vtest26 BL4 NM26 0
+X27 WL3 NM27 MTJT
+Vtest27 BL4 NM27 0
+X28 WL4 NM28 MTJT
+Vtest28 BL4 NM28 0
+X29 WL5 NM29 MTJT
+Vtest29 BL4 NM29 0
+X30 WL6 NM30 MTJT
+Vtest30 BL4 NM30 0
+X31 WL7 NM31 MTJT
+Vtest31 BL4 NM31 0
+X32 WL8 NM32 MTJT
+Vtest32 BL4 NM32 0
+X33 WL1 NM33 MTJT
+Vtest33 BL5 NM33 0
+X34 WL2 NM34 MTJT
+Vtest34 BL5 NM34 0
+X35 WL3 NM35 MTJT
+Vtest35 BL5 NM35 0
+X36 WL4 NM36 MTJT
+Vtest36 BL5 NM36 0
+X37 WL5 NM37 MTJT
+Vtest37 BL5 NM37 0
+X38 WL6 NM38 MTJT
+Vtest38 BL5 NM38 0
+X39 WL7 NM39 MTJT
+Vtest39 BL5 NM39 0
+X40 WL8 NM40 MTJT
+Vtest40 BL5 NM40 0
+X41 WL1 NM41 MTJT
+Vtest41 BL6 NM41 0
+X42 WL2 NM42 MTJT
+Vtest42 BL6 NM42 0
+X43 WL3 NM43 MTJT
+Vtest43 BL6 NM43 0
+X44 WL4 NM44 MTJT
+Vtest44 BL6 NM44 0
+X45 WL5 NM45 MTJT
+Vtest45 BL6 NM45 0
+X46 WL6 NM46 MTJT
+Vtest46 BL6 NM46 0
+X47 WL7 NM47 MTJT
+Vtest47 BL6 NM47 0
+X48 WL8 NM48 MTJT
+Vtest48 BL6 NM48 0
+X49 WL1 NM49 MTJT
+Vtest49 BL7 NM49 0
+X50 WL2 NM50 MTJT
+Vtest50 BL7 NM50 0
+X51 WL3 NM51 MTJT
+Vtest51 BL7 NM51 0
+X52 WL4 NM52 MTJT
+Vtest52 BL7 NM52 0
+X53 WL5 NM53 MTJT
+Vtest53 BL7 NM53 0
+X54 WL6 NM54 MTJT
+Vtest54 BL7 NM54 0
+X55 WL7 NM55 MTJT
+Vtest55 BL7 NM55 0
+X56 WL8 NM56 MTJT
+Vtest56 BL7 NM56 0
+X57 WL1 NM57 MTJT
+Vtest57 BL8 NM57 0
+X58 WL2 NM58 MTJT
+Vtest58 BL8 NM58 0
+X59 WL3 NM59 MTJT
+Vtest59 BL8 NM59 0
+X60 WL4 NM60 MTJT
+Vtest60 BL8 NM60 0
+X61 WL5 NM61 MTJT
+Vtest61 BL8 NM61 0
+X62 WL6 NM62 MTJT
+Vtest62 BL8 NM62 0
+X63 WL7 NM63 MTJT
+Vtest63 BL8 NM63 0
+X64 WL8 NM64 MTJT
+Vtest64 BL8 NM64 0
+
+
+* Bitlines Capacitance
+
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+Cbl3 BL3 Gnd 'cap'
+Cbl4 BL4 Gnd 'cap'
+Cbl5 BL5 Gnd 'cap'
+Cbl6 BL6 Gnd 'cap'
+Cbl7 BL7 Gnd 'cap'
+Cbl8 BL8 Gnd 'cap'
+R1 BL1 Gnd 'res'
+R2 BL2 Gnd 'res'
+R3 BL3 Gnd 'res'
+R4 BL4 Gnd 'res'
+R5 BL5 Gnd 'res'
+R6 BL6 Gnd 'res'
+R7 BL7 Gnd 'res'
+R8 BL8 Gnd 'res'
+
+
+Cbl11 WL1 Gnd 'cap'
+Cbl12 WL2 Gnd 'cap'
+Cbl13 WL3 Gnd 'cap'
+Cbl14 WL4 Gnd 'cap'
+Cbl15 WL5 Gnd 'cap'
+Cbl16 WL6 Gnd 'cap'
+Cbl17 WL7 Gnd 'cap'
+Cbl18 WL8 Gnd 'cap'
+
+
+.TRAN 1p 10n
+
+.option rawfmt="psfbin" cmin=5f
+

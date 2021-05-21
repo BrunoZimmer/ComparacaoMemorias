@@ -1,0 +1,15 @@
+*Write time in a crossbar using HF method
+
+alias measurement TmpWrite{
+	run tran (stop = 10n)
+	export real CurX = abs(I(Vtest1)@6n)
+
+	export real TpWrt = 1n - TpWrite
+
+}
+search TpWrite from binary(start=0.7n, stop=0.9n, tol=1f){
+	run TmpWrite
+}while (TmpWrite->CurX < 0.00265 && TmpWrite->CurX > 0.0025)
+*esse valor de  corrente depende da resistencia do MTJ e a tensão aplicada
+
+

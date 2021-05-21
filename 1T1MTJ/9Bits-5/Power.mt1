@@ -1,0 +1,7 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* Crossbar one bit'
+chargeIRd2 chargeIRd3 chargeIRd4 chargeIRd5 chargeIRd6 chargeIRd7 chargeIRd8 
+chargeIRd9 EnergyLeakRead PowerLeakRead alter# 
+-5.64955e-14 0 5.50665e-15 0 5.50665e-15 0 -5.64955e-14 0 -1.63164e-13 
+-4.89493e-23 2 
+

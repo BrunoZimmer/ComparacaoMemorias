@@ -1,0 +1,49 @@
+ahdlcmicompile: Compiling ahdlcmi in Cell.ahdlSimDB//bsource_c88c6a.va.bsource_c88c6a.ahdlcmi/Linux-64/ for Linux-64 with optimize using gcc on Thu Mar 18 20:30:33 -03 2021 [5.0]
+ahdlcmicompile: Generating makefile
+PATH:  /tools/cadence/SPECTRE161/bin:/tools/cadence/SPECTRE161/tools.lnx86/bin/64bit:/tools/cadence/SPECTRE161/tools.lnx86/bin:/tools/cadence/SPECTRE161/tools.lnx86/mdl/bin:/tools/cadence/SPECTRE161/tools/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/home/brunozimmer/.local/bin:/home/brunozimmer/bin
+LD_LIBRARY_PATH:  /tools/cadence/SPECTRE161/tools.lnx86/giganta/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/mdl/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/mmsim/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/tcltk-8.4.20/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/inca/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/dfII/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/lib/64bit:/tools/cadence/SPECTRE161/tools.lnx86/lib:/tools/cadence/SPECTRE161/tools.lnx86/mdl/lib:/tools/cadence/SPECTRE161/tools.lnx86/lib/64bit/SuSE
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/bin/gnumake -j4 -f GNUmakefile
+Cleaning ./obj/optimize/5.0
+rm -f -rf ./obj/optimize/5.0
+Compiling C file bsource_c88c6a.c (optimize)
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/bin/64bit/ahdlcc 0 /tools/cadence/SPECTRE161/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc  -march=k8 -ffast-math  -fno-unsafe-math-optimizations -O3 -m64 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include -c bsource_c88c6a.c -o obj/optimize/5.0/bsource_c88c6a.o || rm -f -f obj/optimize/5.0/bsource_c88c6a.o
+<stdin>: In function 'bsource_c88c6a_DcFuncDerLoad':
+<stdin>:167:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1989:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                     ^
+<stdin>: In function 'bsource_c88c6a_TranFuncDerLoad':
+<stdin>:420:7: warning: passing argument 1 of 'aslDevInterAddStaticElement' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1989:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern long aslDevInterAddStaticElement( void *, double, struct ahdlFuncModeParam * );
+                                     ^
+<stdin>: In function 'bsource_c88c6a_pDC_Load':
+<stdin>:1492:1058: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2513:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                     ^
+<stdin>: In function 'bsource_c88c6a_pGetMatrixPointers':
+<stdin>:1538:2412: warning: assignment makes integer from pointer without a cast [enabled by default]
+<stdin>: In function 'bsource_c88c6a_pAnalTranLoad':
+<stdin>:1571:2020: warning: passing argument 1 of 'aslDevFillZeorDiagonalElemet' makes pointer from integer without a cast [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:2513:37: note: expected 'void *' but argument is of type 'long int'
+     ASL_FUNC_DECL_START extern void aslDevFillZeorDiagonalElemet( void *, int, unsigned int, struct ahdlFuncModeParam * );
+                                     ^
+<stdin>: In function 'bsource_c88c6a_pSaveRestart':
+<stdin>:1597:612: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1213:43: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+     ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                           ^
+<stdin>: In function 'bsource_c88c6a_pSaveRestartInst':
+<stdin>:1600:614: warning: passing argument 2 of 'aslDevAvarSR' from incompatible pointer type [enabled by default]
+In file included from <stdin>:24:0:
+/tools/cadence/SPECTRE161/tools.lnx86/spectre/ahdlcmi/include/ahdlDevLibGlobal.h:1213:43: note: expected 'struct ahdlAnalogVar *' but argument is of type 'char *'
+     ASL_FUNC_DECL_START extern PklError_e aslDevAvarSR( int, struct ahdlAnalogVar *, char *, char *, char *, PklJar_t * );
+                                           ^
+rm -f -rf bsource_c88c6a.c
+/tools/cadence/SPECTRE161/tools.lnx86/cdsgcc/gcc/4.8/bin/gcc -shared -O3 -m64 -fPIC -o obj/optimize/5.0/libahdlcmi_bsource_c88c6a.so ./obj/optimize/5.0/bsource_c88c6a.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 

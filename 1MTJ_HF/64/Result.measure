@@ -1,0 +1,49 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  9:06:36 PM, Thur Mar 18, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  PowerRd
+Analysis Type      :  tran
+EnergyRead      = -3.88419e-13 
+
+
+Measurement Name   :  LeakRd
+Analysis Type      :  tran
+EnergyLeakRead  = -1.09082e-12 
+
+
+Measurement Name   :  PowerWrt
+Analysis Type      :  tran
+EnergyWrite     = 2.94899e-12 
+
+
+Measurement Name   :  LeakWrt
+Analysis Type      :  tran
+EnergyLeakWrite = 2.26272e-12 
+
+
+Measurement Name   :  LeakStat
+Analysis Type      :  dc
+TotalStaticLeakage = 0 
+
+
+Swept Measurements :
+Measurement Name   :  TmpRead-meas_search
+Analysis Type      :  tran
+CurBL              TpRead     @ 1.65499e-09   =  0.000830001     
+TpRd               TpRead     @ 1.65499e-09   =  4.50058e-11     
+
+
+Measurement Name   :  TmpWrite-meas_search
+Analysis Type      :  tran
+CurX               TpWrite    @ 2.54721e-09   =  0.00464702     
+TpWrt              TpWrite    @ 2.54721e-09   =  1.52787e-10     
+
+
+
+
+

@@ -1,0 +1,337 @@
+* SRAM memory core
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include '6TBitCell.spi'
+.include 'TRISTATE.spi'
+.include 'PreCharge.spi'
+.include 'PassTransistor.spi'
+
+
+.param VPre = 1
+.param TpEn = 0.5n
+.param TpWl = 1n
+.param cap = 15f
+
+Vwl1 WL1 Gnd PWL 0 0
+Vwl2 WL2 Gnd PWL 0 0
+Vwl3 WL3 Gnd PWL 0 0
+Vwl4 WL4 Gnd PWL 0 0 '(TpWl)' 0 '(TpWl+1p)' 1 (1.5n+2p) 1 (1.5n+3p) 0
+Vwl5 WL5 Gnd PWL 0 0
+Vwl6 WL6 Gnd PWL 0 0
+Vwl7 WL7 Gnd PWL 0 0
+Vwl8 WL8 Gnd PWL 0 0
+
+
+Vwd1 WD1 Gnd 0
+Vwd2 WD2 Gnd 0
+Vwd3 WD3 Gnd 0
+Vwd4 WD4 Gnd 0
+Vwd5 WD5 Gnd 0
+Vwd6 WD6 Gnd 0
+Vwd7 WD7 Gnd 0
+Vwd8 WD8 Gnd 0
+
+
+Vwdb1 WDB1 Gnd 1
+Vwdb2 WDB2 Gnd 1
+Vwdb3 WDB3 Gnd 1
+Vwdb4 WDB4 Gnd 1
+Vwdb5 WDB5 Gnd 1
+Vwdb6 WDB6 Gnd 1
+Vwdb7 WDB7 Gnd 1
+Vwdb8 WDB8 Gnd 1
+
+
+Ven1 EN1 Gnd 0
+Ven2 EN2 Gnd 0
+Ven3 EN3 Gnd 0
+Ven4 EN4 Gnd PWL 0 0 '(TpEn-1p)' 0 'TpEn' 1 1.5n 1 (1.5n+1p) 0
+Ven5 EN5 Gnd 0
+Ven6 EN6 Gnd 0
+Ven7 EN7 Gnd 0
+Ven8 EN8 Gnd 0
+
+
+Venb1 ENB1 Gnd 1
+Venb2 ENB2 Gnd 1
+Venb3 ENB3 Gnd 1
+Venb4 ENB4 Gnd PWL 0 1 '(TpEn-1p)' 1 'TpEn' 0 1.5n 0 (1.5n+1p) 1
+Venb5 ENB5 Gnd 1
+Venb6 ENB6 Gnd 1
+Venb7 ENB7 Gnd 1
+Venb8 ENB8 Gnd 1
+
+
+Vpre1 PRE1 Gnd 1
+Vpre2 PRE2 Gnd 1
+Vpre3 PRE3 Gnd 1
+Vpre4 PRE4 Gnd 1
+Vpre5 PRE5 Gnd 1
+Vpre6 PRE6 Gnd 1
+Vpre7 PRE7 Gnd 1
+Vpre8 PRE8 Gnd 1
+
+
+Vvdd Vvdd Gnd 1
+Vdd Vdd Gnd 1
+Vgnd Gnd 0 0
+* Bitcell
+
+X1 NM1 BLB1 WL1 Vdd Gnd BC
+Vtest1 BL1 NM1 0
+
+X2 NM2 BLB1 WL2 Vdd Gnd BC
+Vtest2 BL1 NM2 0
+
+X3 NM3 BLB1 WL3 Vdd Gnd BC
+Vtest3 BL1 NM3 0
+
+X4 NM4 BLB1 WL4 Vdd Gnd BC
+Vtest4 BL1 NM4 0
+
+X5 NM5 BLB1 WL5 Vdd Gnd BC
+Vtest5 BL1 NM5 0
+
+X6 NM6 BLB1 WL6 Vdd Gnd BC
+Vtest6 BL1 NM6 0
+
+X7 NM7 BLB1 WL7 Vdd Gnd BC
+Vtest7 BL1 NM7 0
+
+X8 NM8 BLB1 WL8 Vdd Gnd BC
+Vtest8 BL1 NM8 0
+
+X9 NM9 BLB2 WL1 Vdd Gnd BC
+Vtest9 BL2 NM9 0
+
+X10 NM10 BLB2 WL2 Vdd Gnd BC
+Vtest10 BL2 NM10 0
+
+X11 NM11 BLB2 WL3 Vdd Gnd BC
+Vtest11 BL2 NM11 0
+
+X12 NM12 BLB2 WL4 Vdd Gnd BC
+Vtest12 BL2 NM12 0
+
+X13 NM13 BLB2 WL5 Vdd Gnd BC
+Vtest13 BL2 NM13 0
+
+X14 NM14 BLB2 WL6 Vdd Gnd BC
+Vtest14 BL2 NM14 0
+
+X15 NM15 BLB2 WL7 Vdd Gnd BC
+Vtest15 BL2 NM15 0
+
+X16 NM16 BLB2 WL8 Vdd Gnd BC
+Vtest16 BL2 NM16 0
+
+X17 NM17 BLB3 WL1 Vdd Gnd BC
+Vtest17 BL3 NM17 0
+
+X18 NM18 BLB3 WL2 Vdd Gnd BC
+Vtest18 BL3 NM18 0
+
+X19 NM19 BLB3 WL3 Vdd Gnd BC
+Vtest19 BL3 NM19 0
+
+X20 NM20 BLB3 WL4 Vdd Gnd BC
+Vtest20 BL3 NM20 0
+
+X21 NM21 BLB3 WL5 Vdd Gnd BC
+Vtest21 BL3 NM21 0
+
+X22 NM22 BLB3 WL6 Vdd Gnd BC
+Vtest22 BL3 NM22 0
+
+X23 NM23 BLB3 WL7 Vdd Gnd BC
+Vtest23 BL3 NM23 0
+
+X24 NM24 BLB3 WL8 Vdd Gnd BC
+Vtest24 BL3 NM24 0
+
+X25 NM25 BLB4 WL1 Vdd Gnd BC
+Vtest25 BL4 NM25 0
+
+X26 NM26 BLB4 WL2 Vdd Gnd BC
+Vtest26 BL4 NM26 0
+
+X27 NM27 BLB4 WL3 Vdd Gnd BC
+Vtest27 BL4 NM27 0
+
+X28 NM28 BLB4 WL4 Vdd Gnd BC
+Vtest28 BL4 NM28 0
+
+X29 NM29 BLB4 WL5 Vdd Gnd BC
+Vtest29 BL4 NM29 0
+
+X30 NM30 BLB4 WL6 Vdd Gnd BC
+Vtest30 BL4 NM30 0
+
+X31 NM31 BLB4 WL7 Vdd Gnd BC
+Vtest31 BL4 NM31 0
+
+X32 NM32 BLB4 WL8 Vdd Gnd BC
+Vtest32 BL4 NM32 0
+
+X33 NM33 BLB5 WL1 Vdd Gnd BC
+Vtest33 BL5 NM33 0
+
+X34 NM34 BLB5 WL2 Vdd Gnd BC
+Vtest34 BL5 NM34 0
+
+X35 NM35 BLB5 WL3 Vdd Gnd BC
+Vtest35 BL5 NM35 0
+
+X36 NM36 BLB5 WL4 Vdd Gnd BC
+Vtest36 BL5 NM36 0
+
+X37 NM37 BLB5 WL5 Vdd Gnd BC
+Vtest37 BL5 NM37 0
+
+X38 NM38 BLB5 WL6 Vdd Gnd BC
+Vtest38 BL5 NM38 0
+
+X39 NM39 BLB5 WL7 Vdd Gnd BC
+Vtest39 BL5 NM39 0
+
+X40 NM40 BLB5 WL8 Vdd Gnd BC
+Vtest40 BL5 NM40 0
+
+X41 NM41 BLB6 WL1 Vdd Gnd BC
+Vtest41 BL6 NM41 0
+
+X42 NM42 BLB6 WL2 Vdd Gnd BC
+Vtest42 BL6 NM42 0
+
+X43 NM43 BLB6 WL3 Vdd Gnd BC
+Vtest43 BL6 NM43 0
+
+X44 NM44 BLB6 WL4 Vdd Gnd BC
+Vtest44 BL6 NM44 0
+
+X45 NM45 BLB6 WL5 Vdd Gnd BC
+Vtest45 BL6 NM45 0
+
+X46 NM46 BLB6 WL6 Vdd Gnd BC
+Vtest46 BL6 NM46 0
+
+X47 NM47 BLB6 WL7 Vdd Gnd BC
+Vtest47 BL6 NM47 0
+
+X48 NM48 BLB6 WL8 Vdd Gnd BC
+Vtest48 BL6 NM48 0
+
+X49 NM49 BLB7 WL1 Vdd Gnd BC
+Vtest49 BL7 NM49 0
+
+X50 NM50 BLB7 WL2 Vdd Gnd BC
+Vtest50 BL7 NM50 0
+
+X51 NM51 BLB7 WL3 Vdd Gnd BC
+Vtest51 BL7 NM51 0
+
+X52 NM52 BLB7 WL4 Vdd Gnd BC
+Vtest52 BL7 NM52 0
+
+X53 NM53 BLB7 WL5 Vdd Gnd BC
+Vtest53 BL7 NM53 0
+
+X54 NM54 BLB7 WL6 Vdd Gnd BC
+Vtest54 BL7 NM54 0
+
+X55 NM55 BLB7 WL7 Vdd Gnd BC
+Vtest55 BL7 NM55 0
+
+X56 NM56 BLB7 WL8 Vdd Gnd BC
+Vtest56 BL7 NM56 0
+
+X57 NM57 BLB8 WL1 Vdd Gnd BC
+Vtest57 BL8 NM57 0
+
+X58 NM58 BLB8 WL2 Vdd Gnd BC
+Vtest58 BL8 NM58 0
+
+X59 NM59 BLB8 WL3 Vdd Gnd BC
+Vtest59 BL8 NM59 0
+
+X60 NM60 BLB8 WL4 Vdd Gnd BC
+Vtest60 BL8 NM60 0
+
+X61 NM61 BLB8 WL5 Vdd Gnd BC
+Vtest61 BL8 NM61 0
+
+X62 NM62 BLB8 WL6 Vdd Gnd BC
+Vtest62 BL8 NM62 0
+
+X63 NM63 BLB8 WL7 Vdd Gnd BC
+Vtest63 BL8 NM63 0
+
+X64 NM64 BLB8 WL8 Vdd Gnd BC
+Vtest64 BL8 NM64 0
+
+
+
+* Write Driver
+
+X65 WD1 BL1 EN1 ENB1 Vdd Gnd TI
+X66 WD2 BL2 EN2 ENB2 Vdd Gnd TI
+X67 WD3 BL3 EN3 ENB3 Vdd Gnd TI
+X68 WD4 BL4 EN4 ENB4 Vdd Gnd TI
+X69 WD5 BL5 EN5 ENB5 Vdd Gnd TI
+X70 WD6 BL6 EN6 ENB6 Vdd Gnd TI
+X71 WD7 BL7 EN7 ENB7 Vdd Gnd TI
+X72 WD8 BL8 EN8 ENB8 Vdd Gnd TI
+
+
+X73 WDB1 BLB1 EN1 ENB1 Vdd Gnd TI
+X74 WDB2 BLB2 EN2 ENB2 Vdd Gnd TI
+X75 WDB3 BLB3 EN3 ENB3 Vdd Gnd TI
+X76 WDB4 BLB4 EN4 ENB4 Vdd Gnd TI
+X77 WDB5 BLB5 EN5 ENB5 Vdd Gnd TI
+X78 WDB6 BLB6 EN6 ENB6 Vdd Gnd TI
+X79 WDB7 BLB7 EN7 ENB7 Vdd Gnd TI
+X80 WDB8 BLB8 EN8 ENB8 Vdd Gnd TI
+
+
+* Pre charge
+
+X81 BL1 BLB1 PRE1 Vdd PC
+X82 BL2 BLB2 PRE2 Vdd PC
+X83 BL3 BLB3 PRE3 Vdd PC
+X84 BL4 BLB4 PRE4 Vdd PC
+X85 BL5 BLB5 PRE5 Vdd PC
+X86 BL6 BLB6 PRE6 Vdd PC
+X87 BL7 BLB7 PRE7 Vdd PC
+X88 BL8 BLB8 PRE8 Vdd PC
+
+
+* Bitlines Capacitance
+
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+Cbl3 BL3 Gnd 'cap'
+Cbl4 BL4 Gnd 'cap'
+Cbl5 BL5 Gnd 'cap'
+Cbl6 BL6 Gnd 'cap'
+Cbl7 BL7 Gnd 'cap'
+Cbl8 BL8 Gnd 'cap'
+
+Cblb1 BLB1 Gnd 'cap'
+Cblb2 BLB2 Gnd 'cap'
+Cblb3 BLB3 Gnd 'cap'
+Cblb4 BLB4 Gnd 'cap'
+Cblb5 BLB5 Gnd 'cap'
+Cblb6 BLB6 Gnd 'cap'
+Cblb7 BLB7 Gnd 'cap'
+Cblb8 BLB8 Gnd 'cap'
+
+
+.TRAN 1p 10n
+
+.option rawfmt="psfbin" method=trap bin_relref=yes
+
+.IC V(X28.Q)=0 V(X28.QB)=1 V(BL4)=1 V(BLB4)=1
+
+

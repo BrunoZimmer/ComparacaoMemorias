@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  8:45:51 AM, Wed Jan 27, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWriteBit-meas_search
+Analysis Type      :  tran
+CurX               TpWrite    @ 8.23492e-10   =  0.00128009     
+TpWrt              TpWrite    @ 8.23492e-10   =  1.76508e-10     
+
+
+
+
+

@@ -1,0 +1,1 @@
+	export real R_Prop_Cell= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)

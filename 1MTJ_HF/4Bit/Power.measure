@@ -1,0 +1,32 @@
+Exported variables from results directory:  ./MRAMHFOneCell.raw/
+
+date               :  1:32:33 PM, Thur Jan 21, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  PowerRd
+Analysis Type      :  tran
+EnergyRead      = 1.98991e-13 
+PowerRead       = 5.96974e-22 
+
+
+Measurement Name   :  LeakRd
+Analysis Type      :  tran
+LeakEnergyRd    = 1.59195e-13 
+LeakPowerRd     = 4.77584e-22 
+
+
+Measurement Name   :  PowerWrt
+Analysis Type      :  tran
+EnergyWrite     = 3.09871e-12 
+PowerWrite      = 9.29614e-21 
+
+
+Measurement Name   :  LeakWrt
+Analysis Type      :  tran
+LeakEnergyWrt   = 3.17672e-13 
+LeakPowerWrt    = 9.53016e-22 
+
+

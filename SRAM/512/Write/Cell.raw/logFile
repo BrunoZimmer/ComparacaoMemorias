@@ -1,0 +1,62 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Mar 22 16:45:05 2021"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "4:45:05 PM, Mon Mar 22, 2021"
+"design" "* SRAM memory core"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"LeakWrt-tran" "analysisInst" (
+"tran"
+"LeakWrt.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `LeakWrt': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"LeakWrt-meas_tran" "analysisInst" (
+"meas_tran"
+"LeakWrt.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for LeakWrt Analysis tran"
+)
+"PowerWrt-tran" "analysisInst" (
+"tran"
+"PowerWrt.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerWrt': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerWrt-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerWrt.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerWrt Analysis tran"
+)
+END

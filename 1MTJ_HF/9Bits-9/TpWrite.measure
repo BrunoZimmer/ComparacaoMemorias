@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./MRAMHF.raw/
+
+date               :  6:56:37 PM, Tue Jan 26, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWrite-meas_search
+Analysis Type      :  tran
+CurBL              TpWrite    @ 2.5782e-09   =  0.00469888     
+TpWrt              TpWrite    @ 2.5782e-09   =  1.21804e-10     
+
+
+
+
+

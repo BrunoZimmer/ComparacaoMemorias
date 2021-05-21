@@ -1,0 +1,468 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 12774
+Memory  available: 275.6853 MB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3305.7 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 34.8 %, 36.0 %, 37.2 %
+
+
+Simulating `MemorySchematic.scs' on itacolomi.lapsi at 10:21:07 AM, Fri Jan 22, 2021 (process id: 12774).
+Current working directory: /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        Power.mdl MemorySchematic.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits/MemorySchematic.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits/TRANSGATE.spi
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits/1T1MBitCell.spi
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1T1MTJ/4Bits/MTJT.spi
+Time for NDB Parsing: CPU = 188.449 ms, elapsed = 203.191 ms.
+Time accumulated: CPU = 206.435 ms, elapsed = 203.196 ms.
+Peak resident memory used = 53 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_299dda is up to date.
+Installed compiled interface for bsource_299dda.
+Existing shared object for module bsource_c88c6a is up to date.
+Installed compiled interface for bsource_c88c6a.
+Existing shared object for module bsource_42ea24 is up to date.
+Installed compiled interface for bsource_42ea24.
+Existing shared object for module bsource_7b7e87 is up to date.
+Installed compiled interface for bsource_7b7e87.
+Existing shared object for module bsource_098211 is up to date.
+Installed compiled interface for bsource_098211.
+Existing shared object for module bsource_ad0f4a is up to date.
+Installed compiled interface for bsource_ad0f4a.
+Time for Elaboration: CPU = 21.05 ms, elapsed = 21.132 ms.
+Time accumulated: CPU = 227.622 ms, elapsed = 224.481 ms.
+Peak resident memory used = 61.1 Mbytes.
+
+
+Time for EDB Visiting: CPU = 2.254 ms, elapsed = 2.25902 ms.
+Time accumulated: CPU = 230.006 ms, elapsed = 226.883 ms.
+Peak resident memory used = 61.9 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to the following 4 nodes:
+        ENBl1
+        ENBl2
+        Vdd
+        BL2
+    No DC path from node `BL2' to ground, Gmin installed to provide path.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 71
+              bsim4 4     
+     bsource_7b7e87 4     
+     bsource_42ea24 4     
+     bsource_299dda 4     
+     bsource_098211 4     
+     bsource_ad0f4a 4     
+     bsource_c88c6a 4     
+          capacitor 26    
+           resistor 28    
+               vccs 4     
+               vcvs 16    
+            vsource 17    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 2.702 ms, elapsed = 40.9451 ms.
+Time accumulated: CPU = 232.83 ms, elapsed = 267.965 ms.
+Peak resident memory used = 63.3 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+***************************************************
+Transient Analysis `PowerRd': time = (0 s -> 10 ns)
+***************************************************
+DC simulation time: CPU = 1.221 ms, elapsed = 1.2219 ms.
+
+Notice from spectre during transient analysis `PowerRd', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/PowerRd.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 10 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   17      (current)
+                 save   71      (voltage)
+
+..
+
+Notice from spectre at time = 200.938 ps during transient analysis `PowerRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 203.785 ps during transient analysis `PowerRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.48 ps during transient analysis `PowerRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.829 ps during transient analysis `PowerRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 210.004 ps during transient analysis `PowerRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             842
+
+Notice from spectre during transient analysis `PowerRd', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.X1.nBiStable) = 10.02 V
+I: I(X3.X1.eBiStable:p) = 19.97 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (53.3 %)      1 (65.1 %)      2 (73.3 %)      3 (56.8 %)
+        Other   
+Initial condition solution time: CPU = 1.285 ms, elapsed = 1.28698 ms.
+Intrinsic tran analysis time:    CPU = 202.195 ms, elapsed = 216.046 ms.
+Total time required for tran analysis `PowerRd': CPU = 205.176 ms, elapsed = 219.029 ms.
+Time accumulated: CPU = 443.745 ms, elapsed = 492.743 ms.
+Peak resident memory used = 66.4 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    199 notices suppressed.
+
+
+**************************************************
+Transient Analysis `LeakRd': time = (0 s -> 10 ns)
+**************************************************
+DC simulation time: CPU = 856 us, elapsed = 857.115 us.
+
+Notice from spectre during transient analysis `LeakRd', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/LeakRd.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 10 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   17      (current)
+                 save   71      (voltage)
+
+..
+
+Notice from spectre at time = 200.938 ps during transient analysis `LeakRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 203.785 ps during transient analysis `LeakRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.48 ps during transient analysis `LeakRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.829 ps during transient analysis `LeakRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 210.004 ps during transient analysis `LeakRd', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             842
+
+Notice from spectre during transient analysis `LeakRd', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.X1.nBiStable) = 10.02 V
+I: I(X3.X1.eBiStable:p) = 19.97 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (57.4 %)      1 (61.8 %)      2 (65.2 %)      3 (64.7 %)
+        Other   
+Initial condition solution time: CPU = 909 us, elapsed = 916.004 us.
+Intrinsic tran analysis time:    CPU = 206.558 ms, elapsed = 221.503 ms.
+Total time required for tran analysis `LeakRd': CPU = 208.78 ms, elapsed = 223.843 ms.
+Time accumulated: CPU = 659.233 ms, elapsed = 739.309 ms.
+Peak resident memory used = 66.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    199 notices suppressed.
+
+
+****************************************************
+Transient Analysis `PowerWrt': time = (0 s -> 10 ns)
+****************************************************
+DC simulation time: CPU = 849 us, elapsed = 851.154 us.
+
+Notice from spectre during transient analysis `PowerWrt', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/PowerWrt.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 10 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   17      (current)
+                 save   71      (voltage)
+
+..
+
+Notice from spectre at time = 200.938 ps during transient analysis `PowerWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 203.785 ps during transient analysis `PowerWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.48 ps during transient analysis `PowerWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.829 ps during transient analysis `PowerWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 210.004 ps during transient analysis `PowerWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X3.M_i_1:int_b.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             842
+
+Notice from spectre during transient analysis `PowerWrt', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.X1.nBiStable) = 10.02 V
+I: I(X3.X1.eBiStable:p) = 19.97 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (66.7 %)      1 (60.0 %)      2 (60.2 %)      3 (63.4 %)
+        Other   
+Initial condition solution time: CPU = 894 us, elapsed = 902.176 us.
+Intrinsic tran analysis time:    CPU = 205.207 ms, elapsed = 219.55 ms.
+Total time required for tran analysis `PowerWrt': CPU = 207.306 ms, elapsed = 221.771 ms.
+Time accumulated: CPU = 873.025 ms, elapsed = 978.827 ms.
+Peak resident memory used = 66.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    199 notices suppressed.
+
+
+***************************************************
+Transient Analysis `LeakWrt': time = (0 s -> 10 ns)
+***************************************************
+DC simulation time: CPU = 849 us, elapsed = 849.962 us.
+
+Notice from spectre during transient analysis `LeakWrt', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/LeakWrt.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 10 ns
+    step = 10 ps
+    maxstep = 200 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   17      (current)
+                 save   71      (voltage)
+
+..
+
+Notice from spectre at time = 200.938 ps during transient analysis `LeakWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 203.785 ps during transient analysis `LeakWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.48 ps during transient analysis `LeakWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 209.829 ps during transient analysis `LeakWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+Notice from spectre at time = 210.004 ps during transient analysis `LeakWrt', during task `MDLControl'.
+    Found trapezoidal ringing on node X1.M_i_1:int_b.
+        Further occurrences of this notice will be suppressed.
+
+........9........8........7........6........5........4........3........2........1........0
+Number of accepted tran steps =             842
+
+Notice from spectre during transient analysis `LeakWrt', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X1.X1.nBiStable) = 10.02 V
+I: I(X3.X1.eBiStable:p) = 19.97 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (71.8 %)      1 (58.3 %)      2 (57.8 %)      3 (61.2 %)
+        Other   
+Initial condition solution time: CPU = 895 us, elapsed = 905.037 us.
+Intrinsic tran analysis time:    CPU = 207.141 ms, elapsed = 221.38 ms.
+Total time required for tran analysis `LeakWrt': CPU = 209.332 ms, elapsed = 223.695 ms.
+Time accumulated: CPU = 1.08891 s, elapsed = 1.23086 s.
+Peak resident memory used = 66.9 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    199 notices suppressed.
+
+
+Aggregate audit (10:21:08 AM, Fri Jan 22, 2021):
+Time used: CPU = 1.09 s, elapsed = 1.26 s, util. = 86.7%.
+Time spent in licensing: elapsed = 29.7 ms.
+Peak memory used = 67.3 Mbytes.
+Simulation started at: 10:21:07 AM, Fri Jan 22, 2021, ended at: 10:21:08 AM, Fri Jan 22, 2021, with elapsed time (wall clock): 1.26 s.
+spectre completes with 0 errors, 1 warning, and 34 notices.

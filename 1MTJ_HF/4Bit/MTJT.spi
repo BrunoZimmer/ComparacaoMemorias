@@ -1,0 +1,103 @@
+** MTJT macro-model 
+**
+** Authors:
+**	Jon Harms		(harms074@umn.edu)
+**	Farbod Ebrahimi	(ebrah008@umn.edu)
+**
+** Latest Update:
+**	2009 08 13
+**
+
+** -------------------------**
+** Declaration of Sub-circuit
+** -------------------------**
+
+.SUBCKT MTJT n+ n-
+**.PRINT R(gMTJ)
+
+** -------------------------**
+** User Parameter Defaults
+** -------------------------**
+.PARAM
++	ICAP=0.5m
++	ICP=0.5m
++	RP=1800
++	RAP=4500
++	RVFIT=.5
++	THSBT=22
++	IC=+1
++	TTP=7n
++	PCAP=.6f
++	ITPP='ICP*(1-THSBT*log(TTP/1n))'
++	ITPAP='ICAP*(1-THSBT*log(TTP/1n))'
+
+** -------------------------**
+** MTJ Electrode Connections
+** -------------------------**
+
+*~Voltage Controlled Resistor
+gMTJ 	n+	nVCR1	VCR	nVCtrl	0	1e3
+
+*~Parasitic Capacitance
+cPara	n+	nVCR1	'PCAP'
+
+*~Current Sampling
+vISample	n-	nVCR1	DC=0
+
+*~Binary Current Sensors
+eISensBin1	nINeg 0	VOL='EXP(5*I(vISample)/ICP)-1' MIN=0 MAX=1
+eISensBin2	nIPos 0	VOL='EXP(5*I(vISample)/-ICAP)-1' MIN=0 MAX=1
+
+** -------------------------**
+** Decision Circuit
+** -------------------------**
+
+*~Current mirrors
+gMirror1	n51	n50	CUR='1/(EXP(THSBT*(1+I(vISample)/-ICAP))+TTP*1e5*(-ITPAP/I(vISample))^2)' MAX=10
+gMirror2	n50	n51	CUR='1/(EXP(THSBT*(1+I(vISample)/ICP))+TTP*1e5*(ITPP/I(vISample))^2)' MAX=10
+
+*~Decision capacitors
+cDec1	n50	0 1n IC=0
+cDec2	n51	0 1n IC=0
+
+*~Voltage limiters
+rlim1	n50	n60	.01
+elim1	n60	0	n50	0	1	MIN=0 MAX=1.01
+rlim2	n51	n61	.01
+elim2	n61	0	n51	0	1	MIN=0 MAX=1.01
+rshunt1 n50 0 10g
+rshunt2 n51 0 10g
+
+*~Current controlled 2:1 MUX
+eMux3 nVDec	0	VOL='v(n50)*v(nINeg)-v(n51)*v(nIPos)'
+
+** -------------------------**
+** Bi-stable Multivibrator
+** -------------------------**
+
+*~Amplifier w/clipping
+eBiStable	nBiStable	0	VCVS	nFeedback	0	10000	MAX=10V		MIN=-10V
+
+*~Positive Feedback
+rFB1	nVDec	nFeedback	1e3
+rFB2	nFeedback	nBiStable	10e3
+
+*~Initial Conditions
+cIC1	nFeedback	0	1f	IC='(IC<0)?-1V:1V'
+cIC2	nBiStable	0	1f	IC='(IC<0)?-10V:10V'
+
+*~Biasing and offset
+eVTMR	nVTMR	0	VCVS	nBistable	0	1	MIN='RP/1e3' MAX='RAP/1e3'
+**eVTMR	nVTMR	0	VCVS	nBistable	0	1	MIN='RAP/1e3' MAX='RP/1e3'
+** -------------------------**
+** Curve Fitting Circuit
+** -------------------------**
+
+*~Curve fitting amplifiers
+eRVFit	nRVFit 	0	VOL='v(nVTMR)*(EXP((PWR(ABS(v(n+)-v(n-)),2)/(-2*RVFIT))))'
+
+*Feedback filter (avoids oscillation)
+rShunt3 	nRVFit nVCtrl 1k
+cSRL2 	nVCtrl 0 6f
+
+.ends MTJT

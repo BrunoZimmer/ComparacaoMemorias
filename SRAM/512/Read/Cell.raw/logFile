@@ -1,0 +1,62 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Mon Mar 22 16:52:03 2021"
+"simulator" "spectre"
+"version" "16.1.0.673.isr14"
+"date" "4:52:03 PM, Mon Mar 22, 2021"
+"design" "* SRAM memory core"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"LeakRd-tran" "analysisInst" (
+"tran"
+"LeakRd.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `LeakRd': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"LeakRd-meas_tran" "analysisInst" (
+"meas_tran"
+"LeakRd.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for LeakRd Analysis tran"
+)
+"PowerRd-tran" "analysisInst" (
+"tran"
+"PowerRd.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `PowerRd': time = (0 s -> 10 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"PowerRd-meas_tran" "analysisInst" (
+"meas_tran"
+"PowerRd.meas_tran"
+"PSF"
+""
+()
+"Measurement Results for PowerRd Analysis tran"
+)
+END

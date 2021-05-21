@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Memoria w/ 1 bitcell'
+index Tp_en Ten1 Ten0 Dif_tmin_en Tp_en0 Tp_en1 Tp_write0 alter# 
+1 6.95555e-10 0.0384318 0.900006 3.04445e-10 6.95555e-10 3.59556e-09 4.1607e-10 
+2 

@@ -1,0 +1,29 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:26:17 PM, Wed Jan 20, 2021
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWL-meas_search
+Analysis Type      :  tran
+Ten_Q              TpWl       @ 1.41668e-09   =  0.900002     
+Ten_QB             TpWl       @ 1.41668e-09   =  0.0755994     
+Tp_wl              TpWl       @ 1.41668e-09   =  1.41668e-09     
+Tp_wrt_btl         TpWl       @ 1.41668e-09   =  8.33206e-11     
+
+
+Measurement Name   :  TmpEn-meas_search
+Analysis Type      :  tran
+Ten_Q1             TpEn       @ 1.09159e-09   =  0.9     
+Ten_QB1            TpEn       @ 1.09159e-09   =  0.0214379     
+Tp_En              TpEn       @ 1.09159e-09   =  1.09159e-09     
+Tp_Write_total     TpEn       @ 1.09159e-09   =  4.08414e-10     
+Tp_contam          TpEn       @ 1.09159e-09   =  3.25093e-10     
+
+
+
+
+

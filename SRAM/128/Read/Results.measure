@@ -1,0 +1,29 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  10:54:40 PM, Thur Mar 18, 2021
+design             :  * SRAM memory core
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWL-meas_search
+Analysis Type      :  tran
+Ten_Q              TpWl       @ 1.18329e-09   =  1.04219     
+Ten_QB             TpWl       @ 1.18329e-09   =  0.0999997     
+Tp_wl              TpWl       @ 1.18329e-09   =  1.18329e-09     
+Tread_bl           TpWl       @ 1.18329e-09   =  3.16705e-10     
+
+
+Measurement Name   :  TmpPre-meas_search
+Analysis Type      :  tran
+Ten_Q1             TpPre      @ 1.04872e-09   =  0.900001     
+Ten_QB1            TpPre      @ 1.04872e-09   =  0.921269     
+Tp_Pre             TpPre      @ 1.04872e-09   =  1.04872e-09     
+Tp_Read_Total      TpPre      @ 1.04872e-09   =  4.51278e-10     
+Tpre_bl            TpPre      @ 1.04872e-09   =  1.34573e-10     
+
+
+
+
+

@@ -1,0 +1,84 @@
+
+
+alias measurement LeakRd{
+run tran (stop = 10n)
+
+real chargeIRd1 = avg(integ(sig=I(Vtest1), from=8.1n, to=8.4n ))
+real chargeIRd2 = avg(integ(sig=I(Vtest2), from=8.1n, to=8.4n ))
+real chargeIRd3 = avg(integ(sig=I(Vtest3), from=8.1n, to=8.4n ))
+real chargeIRd4 = avg(integ(sig=I(Vtest4), from=8.1n, to=8.4n ))
+real chargeIRd5 = avg(integ(sig=I(Vtest5), from=8.1n, to=8.4n ))
+real chargeIRd6 = avg(integ(sig=I(Vtest6), from=8.1n, to=8.4n ))
+real chargeIRd7 = avg(integ(sig=I(Vtest7), from=8.1n, to=8.4n ))
+real chargeIRd8 = avg(integ(sig=I(Vtest8), from=8.1n, to=8.4n ))
+real chargeIRd9 = avg(integ(sig=I(Vtest9), from=8.1n, to=8.4n ))
+real chargeIRd10 = avg(integ(sig=I(Vtest10), from=8.1n, to=8.4n ))
+real chargeIRd11 = avg(integ(sig=I(Vtest11), from=8.1n, to=8.4n ))
+real chargeIRd12 = avg(integ(sig=I(Vtest12), from=8.1n, to=8.4n ))
+real chargeIRd13 = avg(integ(sig=I(Vtest13), from=8.1n, to=8.4n ))
+real chargeIRd14 = avg(integ(sig=I(Vtest14), from=8.1n, to=8.4n ))
+real chargeIRd15 = avg(integ(sig=I(Vtest15), from=8.1n, to=8.4n ))
+real chargeIRd16 = avg(integ(sig=I(Vtest16), from=8.1n, to=8.4n ))
+real chargeIRd17 = avg(integ(sig=I(Vtest17), from=8.1n, to=8.4n ))
+real chargeIRd18 = avg(integ(sig=I(Vtest18), from=8.1n, to=8.4n ))
+real chargeIRd19 = avg(integ(sig=I(Vtest19), from=8.1n, to=8.4n ))
+real chargeIRd20 = avg(integ(sig=I(Vtest20), from=8.1n, to=8.4n ))
+real chargeIRd21 = avg(integ(sig=I(Vtest21), from=8.1n, to=8.4n ))
+real chargeIRd22 = avg(integ(sig=I(Vtest22), from=8.1n, to=8.4n ))
+real chargeIRd23 = avg(integ(sig=I(Vtest23), from=8.1n, to=8.4n ))
+real chargeIRd24 = avg(integ(sig=I(Vtest24), from=8.1n, to=8.4n ))
+real chargeIRd25 = avg(integ(sig=I(Vtest25), from=8.1n, to=8.4n ))
+real chargeIRd26 = avg(integ(sig=I(Vtest26), from=8.1n, to=8.4n ))
+real chargeIRd27 = avg(integ(sig=I(Vtest27), from=8.1n, to=8.4n ))
+real chargeIRd28 = avg(integ(sig=I(Vtest28), from=8.1n, to=8.4n ))
+real chargeIRd29 = avg(integ(sig=I(Vtest29), from=8.1n, to=8.4n ))
+real chargeIRd30 = avg(integ(sig=I(Vtest30), from=8.1n, to=8.4n ))
+real chargeIRd31 = avg(integ(sig=I(Vtest31), from=8.1n, to=8.4n ))
+real chargeIRd32 = avg(integ(sig=I(Vtest32), from=8.1n, to=8.4n ))
+real chargeIRd33 = avg(integ(sig=I(Vtest33), from=8.1n, to=8.4n ))
+real chargeIRd34 = avg(integ(sig=I(Vtest34), from=8.1n, to=8.4n ))
+real chargeIRd35 = avg(integ(sig=I(Vtest35), from=8.1n, to=8.4n ))
+real chargeIRd36 = avg(integ(sig=I(Vtest36), from=8.1n, to=8.4n ))
+real chargeIRd37 = avg(integ(sig=I(Vtest37), from=8.1n, to=8.4n ))
+real chargeIRd38 = avg(integ(sig=I(Vtest38), from=8.1n, to=8.4n ))
+real chargeIRd39 = avg(integ(sig=I(Vtest39), from=8.1n, to=8.4n ))
+real chargeIRd40 = avg(integ(sig=I(Vtest40), from=8.1n, to=8.4n ))
+real chargeIRd41 = avg(integ(sig=I(Vtest41), from=8.1n, to=8.4n ))
+real chargeIRd42 = avg(integ(sig=I(Vtest42), from=8.1n, to=8.4n ))
+real chargeIRd43 = avg(integ(sig=I(Vtest43), from=8.1n, to=8.4n ))
+real chargeIRd44 = avg(integ(sig=I(Vtest44), from=8.1n, to=8.4n ))
+real chargeIRd45 = avg(integ(sig=I(Vtest45), from=8.1n, to=8.4n ))
+real chargeIRd46 = avg(integ(sig=I(Vtest46), from=8.1n, to=8.4n ))
+real chargeIRd47 = avg(integ(sig=I(Vtest47), from=8.1n, to=8.4n ))
+real chargeIRd48 = avg(integ(sig=I(Vtest48), from=8.1n, to=8.4n ))
+real chargeIRd49 = avg(integ(sig=I(Vtest49), from=8.1n, to=8.4n ))
+real chargeIRd50 = avg(integ(sig=I(Vtest50), from=8.1n, to=8.4n ))
+real chargeIRd51 = avg(integ(sig=I(Vtest51), from=8.1n, to=8.4n ))
+real chargeIRd52 = avg(integ(sig=I(Vtest52), from=8.1n, to=8.4n ))
+real chargeIRd53 = avg(integ(sig=I(Vtest53), from=8.1n, to=8.4n ))
+real chargeIRd54 = avg(integ(sig=I(Vtest54), from=8.1n, to=8.4n ))
+real chargeIRd55 = avg(integ(sig=I(Vtest55), from=8.1n, to=8.4n ))
+real chargeIRd56 = avg(integ(sig=I(Vtest56), from=8.1n, to=8.4n ))
+real chargeIRd57 = avg(integ(sig=I(Vtest57), from=8.1n, to=8.4n ))
+real chargeIRd58 = avg(integ(sig=I(Vtest58), from=8.1n, to=8.4n ))
+real chargeIRd59 = avg(integ(sig=I(Vtest59), from=8.1n, to=8.4n ))
+real chargeIRd60 = avg(integ(sig=I(Vtest60), from=8.1n, to=8.4n ))
+real chargeIRd61 = avg(integ(sig=I(Vtest61), from=8.1n, to=8.4n ))
+real chargeIRd62 = avg(integ(sig=I(Vtest62), from=8.1n, to=8.4n ))
+real chargeIRd63 = avg(integ(sig=I(Vtest63), from=8.1n, to=8.4n ))
+real chargeIRd64 = avg(integ(sig=I(Vtest64), from=8.1n, to=8.4n ))
+
+export real EnergyLeakRead = (chargeIRd1 + chargeIRd2 + chargeIRd3 + chargeIRd4 + chargeIRd5 + chargeIRd6 + chargeIRd7 + chargeIRd8 + chargeIRd9 + chargeIRd10 + chargeIRd11 + chargeIRd12 + chargeIRd13 + chargeIRd14 + chargeIRd15 + chargeIRd16 + chargeIRd17 + chargeIRd18 + chargeIRd19 + chargeIRd20 + chargeIRd21 + chargeIRd22 + chargeIRd23 + chargeIRd24 + chargeIRd25 + chargeIRd26 + chargeIRd27 + chargeIRd28 + chargeIRd29 + chargeIRd30 + chargeIRd31 + chargeIRd32 + chargeIRd33 + chargeIRd34 + chargeIRd35 + chargeIRd36 + chargeIRd37 + chargeIRd38 + chargeIRd39 + chargeIRd40 + chargeIRd41 + chargeIRd42 + chargeIRd43 + chargeIRd44 + chargeIRd45 + chargeIRd46 + chargeIRd47 + chargeIRd48 + chargeIRd49 + chargeIRd50 + chargeIRd51 + chargeIRd52 + chargeIRd53 + chargeIRd54 + chargeIRd55 + chargeIRd56 + chargeIRd57 + chargeIRd58 + chargeIRd59 + chargeIRd60 + chargeIRd61 + chargeIRd62 + chargeIRd63 + chargeIRd64)*Vvdd
+
+}
+
+alias measurement PowerRd{
+run tran (stop = 10n)
+
+real chargeIRd28 = avg(integ(sig=I(Vtest28), from=8.1n, to=8.4n ))
+
+export real EnergyRead = (chargeIRd28*Vvdd)
+}
+
+run LeakRd
+run PowerRd

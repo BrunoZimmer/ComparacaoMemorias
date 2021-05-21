@@ -1,0 +1,4 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* SRAM memory core'
+index TpWl Ten_Q Ten_QB Tp_wl Tread_bl alter# 
+1 1.18329e-09 1.04219 0.0999997 1.18329e-09 3.16705e-10 1 

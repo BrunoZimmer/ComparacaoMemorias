@@ -1,0 +1,21 @@
+*Write time 
+
+alias measurement TmpWriteBit {
+	run tran (stop = 10n)
+	export real CurX = abs(I(Vtest1)@6n)
+
+	export real TpWrt = 1n - TpWrite
+}
+
+alias measurement TmpWriteWL { 
+	run tran (stop = 10n)
+
+	export real 
+}
+
+search TpWrite from binary(start=0.9n, stop=0.7n, tol=1f){
+	run TmpWriteBit
+}while (TmpWriteBit->CurX < 0.00135 && TmpWriteBit->CurX > 0.00128)
+*esse valor de  corrente depende da resistencia do MTJ e a tensão aplicada
+
+

@@ -1,0 +1,23 @@
+Exported variables from results directory:  ./SRAMOneCell.raw/
+
+date               :  8:00:59 AM, Thur Dec 10, 2020
+design             :  *Memoria w/ 1 bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Power
+Analysis Type      :  tran
+Power1          = 4.11409e-20 
+Power2          = 3.59978e-19 
+Power3          = 2.74635e-16 
+Power4          = 0 
+Power5          = 0 
+Power6          = 4.02861e-19 
+Power7          = 7.53296e-16 
+Power8          = 0 
+Power_the_fucking_real = 1.02874e-15 
+V1              = 1 
+charge1         = -4.11409e-20 
+
+

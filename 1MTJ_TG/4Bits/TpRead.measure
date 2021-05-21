@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  9:47:46 AM, Fri Jan 22, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpRead-meas_search
+Analysis Type      :  tran
+CurBL              TpRead     @ 2.26246e-10   =  0.0005     
+TpRd               TpRead     @ 2.26246e-10   =  7.37541e-11     
+
+
+
+
+

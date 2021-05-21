@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:33:36 PM, Sun Feb 7, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWrite-meas_search
+Analysis Type      :  tran
+CurX               TpWrite    @ NaN    =  NaN     
+TpWrt              TpWrite    @ NaN    =  NaN     
+
+
+
+
+

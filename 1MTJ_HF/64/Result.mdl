@@ -1,0 +1,284 @@
+* Power - 9.0
+
+
+alias measurement PowerRd{
+run tran (stop = 10n)
+
+real chargeIRd28 = avg(integ(sig=I(Vtest28), from=1.65n, to=1.95n ))
+
+export real EnergyRead = (chargeIRd28*Vvdd)
+}
+
+
+
+alias measurement LeakRd{
+run tran (stop = 10n)
+
+real chargeIRd1 = avg(integ(sig=I(Vtest1), from=1.65n, to=1.95n ))
+real chargeIRd2 = avg(integ(sig=I(Vtest2), from=1.65n, to=1.95n ))
+real chargeIRd3 = avg(integ(sig=I(Vtest3), from=1.65n, to=1.95n ))
+real chargeIRd4 = avg(integ(sig=I(Vtest4), from=1.65n, to=1.95n ))
+real chargeIRd5 = avg(integ(sig=I(Vtest5), from=1.65n, to=1.95n ))
+real chargeIRd6 = avg(integ(sig=I(Vtest6), from=1.65n, to=1.95n ))
+real chargeIRd7 = avg(integ(sig=I(Vtest7), from=1.65n, to=1.95n ))
+real chargeIRd8 = avg(integ(sig=I(Vtest8), from=1.65n, to=1.95n ))
+real chargeIRd9 = avg(integ(sig=I(Vtest9), from=1.65n, to=1.95n ))
+real chargeIRd10 = avg(integ(sig=I(Vtest10), from=1.65n, to=1.95n ))
+real chargeIRd11 = avg(integ(sig=I(Vtest11), from=1.65n, to=1.95n ))
+real chargeIRd12 = avg(integ(sig=I(Vtest12), from=1.65n, to=1.95n ))
+real chargeIRd13 = avg(integ(sig=I(Vtest13), from=1.65n, to=1.95n ))
+real chargeIRd14 = avg(integ(sig=I(Vtest14), from=1.65n, to=1.95n ))
+real chargeIRd15 = avg(integ(sig=I(Vtest15), from=1.65n, to=1.95n ))
+real chargeIRd16 = avg(integ(sig=I(Vtest16), from=1.65n, to=1.95n ))
+real chargeIRd17 = avg(integ(sig=I(Vtest17), from=1.65n, to=1.95n ))
+real chargeIRd18 = avg(integ(sig=I(Vtest18), from=1.65n, to=1.95n ))
+real chargeIRd19 = avg(integ(sig=I(Vtest19), from=1.65n, to=1.95n ))
+real chargeIRd20 = avg(integ(sig=I(Vtest20), from=1.65n, to=1.95n ))
+real chargeIRd21 = avg(integ(sig=I(Vtest21), from=1.65n, to=1.95n ))
+real chargeIRd22 = avg(integ(sig=I(Vtest22), from=1.65n, to=1.95n ))
+real chargeIRd23 = avg(integ(sig=I(Vtest23), from=1.65n, to=1.95n ))
+real chargeIRd24 = avg(integ(sig=I(Vtest24), from=1.65n, to=1.95n ))
+real chargeIRd25 = avg(integ(sig=I(Vtest25), from=1.65n, to=1.95n ))
+real chargeIRd26 = avg(integ(sig=I(Vtest26), from=1.65n, to=1.95n ))
+real chargeIRd27 = avg(integ(sig=I(Vtest27), from=1.65n, to=1.95n ))
+real chargeIRd29 = avg(integ(sig=I(Vtest29), from=1.65n, to=1.95n ))
+real chargeIRd30 = avg(integ(sig=I(Vtest30), from=1.65n, to=1.95n ))
+real chargeIRd31 = avg(integ(sig=I(Vtest31), from=1.65n, to=1.95n ))
+real chargeIRd32 = avg(integ(sig=I(Vtest32), from=1.65n, to=1.95n ))
+real chargeIRd33 = avg(integ(sig=I(Vtest33), from=1.65n, to=1.95n ))
+real chargeIRd34 = avg(integ(sig=I(Vtest34), from=1.65n, to=1.95n ))
+real chargeIRd35 = avg(integ(sig=I(Vtest35), from=1.65n, to=1.95n ))
+real chargeIRd36 = avg(integ(sig=I(Vtest36), from=1.65n, to=1.95n ))
+real chargeIRd37 = avg(integ(sig=I(Vtest37), from=1.65n, to=1.95n ))
+real chargeIRd38 = avg(integ(sig=I(Vtest38), from=1.65n, to=1.95n ))
+real chargeIRd39 = avg(integ(sig=I(Vtest39), from=1.65n, to=1.95n ))
+real chargeIRd40 = avg(integ(sig=I(Vtest40), from=1.65n, to=1.95n ))
+real chargeIRd41 = avg(integ(sig=I(Vtest41), from=1.65n, to=1.95n ))
+real chargeIRd42 = avg(integ(sig=I(Vtest42), from=1.65n, to=1.95n ))
+real chargeIRd43 = avg(integ(sig=I(Vtest43), from=1.65n, to=1.95n ))
+real chargeIRd44 = avg(integ(sig=I(Vtest44), from=1.65n, to=1.95n ))
+real chargeIRd45 = avg(integ(sig=I(Vtest45), from=1.65n, to=1.95n ))
+real chargeIRd46 = avg(integ(sig=I(Vtest46), from=1.65n, to=1.95n ))
+real chargeIRd47 = avg(integ(sig=I(Vtest47), from=1.65n, to=1.95n ))
+real chargeIRd48 = avg(integ(sig=I(Vtest48), from=1.65n, to=1.95n ))
+real chargeIRd49 = avg(integ(sig=I(Vtest49), from=1.65n, to=1.95n ))
+real chargeIRd50 = avg(integ(sig=I(Vtest50), from=1.65n, to=1.95n ))
+real chargeIRd51 = avg(integ(sig=I(Vtest51), from=1.65n, to=1.95n ))
+real chargeIRd52 = avg(integ(sig=I(Vtest52), from=1.65n, to=1.95n ))
+real chargeIRd53 = avg(integ(sig=I(Vtest53), from=1.65n, to=1.95n ))
+real chargeIRd54 = avg(integ(sig=I(Vtest54), from=1.65n, to=1.95n ))
+real chargeIRd55 = avg(integ(sig=I(Vtest55), from=1.65n, to=1.95n ))
+real chargeIRd56 = avg(integ(sig=I(Vtest56), from=1.65n, to=1.95n ))
+real chargeIRd57 = avg(integ(sig=I(Vtest57), from=1.65n, to=1.95n ))
+real chargeIRd58 = avg(integ(sig=I(Vtest58), from=1.65n, to=1.95n ))
+real chargeIRd59 = avg(integ(sig=I(Vtest59), from=1.65n, to=1.95n ))
+real chargeIRd60 = avg(integ(sig=I(Vtest60), from=1.65n, to=1.95n ))
+real chargeIRd61 = avg(integ(sig=I(Vtest61), from=1.65n, to=1.95n ))
+real chargeIRd62 = avg(integ(sig=I(Vtest62), from=1.65n, to=1.95n ))
+real chargeIRd63 = avg(integ(sig=I(Vtest63), from=1.65n, to=1.95n ))
+real chargeIRd64 = avg(integ(sig=I(Vtest64), from=1.65n, to=1.95n ))
+
+export real EnergyLeakRead = (chargeIRd1 + chargeIRd1 + chargeIRd2 + chargeIRd3 + chargeIRd4 + chargeIRd5 + chargeIRd6 + chargeIRd7 + chargeIRd8 + chargeIRd9 + chargeIRd10 + chargeIRd11 + chargeIRd12 + chargeIRd13 + chargeIRd14 + chargeIRd15 + chargeIRd16 + chargeIRd17 + chargeIRd18 + chargeIRd19 + chargeIRd20 + chargeIRd21 + chargeIRd22 + chargeIRd23 + chargeIRd24 + chargeIRd25 + chargeIRd26 + chargeIRd27 + chargeIRd29 + chargeIRd30 + chargeIRd31 + chargeIRd32 + chargeIRd33 + chargeIRd34 + chargeIRd35 + chargeIRd36 + chargeIRd37 + chargeIRd38 + chargeIRd39 + chargeIRd40 + chargeIRd41 + chargeIRd42 + chargeIRd43 + chargeIRd44 + chargeIRd45 + chargeIRd46 + chargeIRd47 + chargeIRd48 + chargeIRd49 + chargeIRd50 + chargeIRd51 + chargeIRd52 + chargeIRd53 + chargeIRd54 + chargeIRd55 + chargeIRd56 + chargeIRd57 + chargeIRd58 + chargeIRd59 + chargeIRd60 + chargeIRd61 + chargeIRd62 + chargeIRd63 + chargeIRd64)*Vvdd
+
+}
+
+
+alias measurement PowerWrt{
+run tran (stop = 10n)
+
+real chargeIWr28 = avg(integ(sig=I(Vtest28), from=2.54n, to=2.84n ))
+
+export real EnergyWrite = (chargeIWr28*Vvdd)
+}
+
+
+
+alias measurement LeakWrt{
+run tran (stop = 10n)
+
+real chargeIWrt1 = avg(integ(sig=I(Vtest1), from=2.54n, to=2.84n ))
+real chargeIWrt2 = avg(integ(sig=I(Vtest2), from=2.54n, to=2.84n ))
+real chargeIWrt3 = avg(integ(sig=I(Vtest3), from=2.54n, to=2.84n ))
+real chargeIWrt4 = avg(integ(sig=I(Vtest4), from=2.54n, to=2.84n ))
+real chargeIWrt5 = avg(integ(sig=I(Vtest5), from=2.54n, to=2.84n ))
+real chargeIWrt6 = avg(integ(sig=I(Vtest6), from=2.54n, to=2.84n ))
+real chargeIWrt7 = avg(integ(sig=I(Vtest7), from=2.54n, to=2.84n ))
+real chargeIWrt8 = avg(integ(sig=I(Vtest8), from=2.54n, to=2.84n ))
+real chargeIWrt9 = avg(integ(sig=I(Vtest9), from=2.54n, to=2.84n ))
+real chargeIWrt10 = avg(integ(sig=I(Vtest10), from=2.54n, to=2.84n ))
+real chargeIWrt11 = avg(integ(sig=I(Vtest11), from=2.54n, to=2.84n ))
+real chargeIWrt12 = avg(integ(sig=I(Vtest12), from=2.54n, to=2.84n ))
+real chargeIWrt13 = avg(integ(sig=I(Vtest13), from=2.54n, to=2.84n ))
+real chargeIWrt14 = avg(integ(sig=I(Vtest14), from=2.54n, to=2.84n ))
+real chargeIWrt15 = avg(integ(sig=I(Vtest15), from=2.54n, to=2.84n ))
+real chargeIWrt16 = avg(integ(sig=I(Vtest16), from=2.54n, to=2.84n ))
+real chargeIWrt17 = avg(integ(sig=I(Vtest17), from=2.54n, to=2.84n ))
+real chargeIWrt18 = avg(integ(sig=I(Vtest18), from=2.54n, to=2.84n ))
+real chargeIWrt19 = avg(integ(sig=I(Vtest19), from=2.54n, to=2.84n ))
+real chargeIWrt20 = avg(integ(sig=I(Vtest20), from=2.54n, to=2.84n ))
+real chargeIWrt21 = avg(integ(sig=I(Vtest21), from=2.54n, to=2.84n ))
+real chargeIWrt22 = avg(integ(sig=I(Vtest22), from=2.54n, to=2.84n ))
+real chargeIWrt23 = avg(integ(sig=I(Vtest23), from=2.54n, to=2.84n ))
+real chargeIWrt24 = avg(integ(sig=I(Vtest24), from=2.54n, to=2.84n ))
+real chargeIWrt25 = avg(integ(sig=I(Vtest25), from=2.54n, to=2.84n ))
+real chargeIWrt26 = avg(integ(sig=I(Vtest26), from=2.54n, to=2.84n ))
+real chargeIWrt27 = avg(integ(sig=I(Vtest27), from=2.54n, to=2.84n ))
+real chargeIWrt29 = avg(integ(sig=I(Vtest29), from=2.54n, to=2.84n ))
+real chargeIWrt30 = avg(integ(sig=I(Vtest30), from=2.54n, to=2.84n ))
+real chargeIWrt31 = avg(integ(sig=I(Vtest31), from=2.54n, to=2.84n ))
+real chargeIWrt32 = avg(integ(sig=I(Vtest32), from=2.54n, to=2.84n ))
+real chargeIWrt33 = avg(integ(sig=I(Vtest33), from=2.54n, to=2.84n ))
+real chargeIWrt34 = avg(integ(sig=I(Vtest34), from=2.54n, to=2.84n ))
+real chargeIWrt35 = avg(integ(sig=I(Vtest35), from=2.54n, to=2.84n ))
+real chargeIWrt36 = avg(integ(sig=I(Vtest36), from=2.54n, to=2.84n ))
+real chargeIWrt37 = avg(integ(sig=I(Vtest37), from=2.54n, to=2.84n ))
+real chargeIWrt38 = avg(integ(sig=I(Vtest38), from=2.54n, to=2.84n ))
+real chargeIWrt39 = avg(integ(sig=I(Vtest39), from=2.54n, to=2.84n ))
+real chargeIWrt40 = avg(integ(sig=I(Vtest40), from=2.54n, to=2.84n ))
+real chargeIWrt41 = avg(integ(sig=I(Vtest41), from=2.54n, to=2.84n ))
+real chargeIWrt42 = avg(integ(sig=I(Vtest42), from=2.54n, to=2.84n ))
+real chargeIWrt43 = avg(integ(sig=I(Vtest43), from=2.54n, to=2.84n ))
+real chargeIWrt44 = avg(integ(sig=I(Vtest44), from=2.54n, to=2.84n ))
+real chargeIWrt45 = avg(integ(sig=I(Vtest45), from=2.54n, to=2.84n ))
+real chargeIWrt46 = avg(integ(sig=I(Vtest46), from=2.54n, to=2.84n ))
+real chargeIWrt47 = avg(integ(sig=I(Vtest47), from=2.54n, to=2.84n ))
+real chargeIWrt48 = avg(integ(sig=I(Vtest48), from=2.54n, to=2.84n ))
+real chargeIWrt49 = avg(integ(sig=I(Vtest49), from=2.54n, to=2.84n ))
+real chargeIWrt50 = avg(integ(sig=I(Vtest50), from=2.54n, to=2.84n ))
+real chargeIWrt51 = avg(integ(sig=I(Vtest51), from=2.54n, to=2.84n ))
+real chargeIWrt52 = avg(integ(sig=I(Vtest52), from=2.54n, to=2.84n ))
+real chargeIWrt53 = avg(integ(sig=I(Vtest53), from=2.54n, to=2.84n ))
+real chargeIWrt54 = avg(integ(sig=I(Vtest54), from=2.54n, to=2.84n ))
+real chargeIWrt55 = avg(integ(sig=I(Vtest55), from=2.54n, to=2.84n ))
+real chargeIWrt56 = avg(integ(sig=I(Vtest56), from=2.54n, to=2.84n ))
+real chargeIWrt57 = avg(integ(sig=I(Vtest57), from=2.54n, to=2.84n ))
+real chargeIWrt58 = avg(integ(sig=I(Vtest58), from=2.54n, to=2.84n ))
+real chargeIWrt59 = avg(integ(sig=I(Vtest59), from=2.54n, to=2.84n ))
+real chargeIWrt60 = avg(integ(sig=I(Vtest60), from=2.54n, to=2.84n ))
+real chargeIWrt61 = avg(integ(sig=I(Vtest61), from=2.54n, to=2.84n ))
+real chargeIWrt62 = avg(integ(sig=I(Vtest62), from=2.54n, to=2.84n ))
+real chargeIWrt63 = avg(integ(sig=I(Vtest63), from=2.54n, to=2.84n ))
+real chargeIWrt64 = avg(integ(sig=I(Vtest64), from=2.54n, to=2.84n ))
+
+export real EnergyLeakWrite = (chargeIWrt1 + chargeIWrt1 + chargeIWrt2 + chargeIWrt3 + chargeIWrt4 + chargeIWrt5 + chargeIWrt6 + chargeIWrt7 + chargeIWrt8 + chargeIWrt9 + chargeIWrt10 + chargeIWrt11 + chargeIWrt12 + chargeIWrt13 + chargeIWrt14 + chargeIWrt15 + chargeIWrt16 + chargeIWrt17 + chargeIWrt18 + chargeIWrt19 + chargeIWrt20 + chargeIWrt21 + chargeIWrt22 + chargeIWrt23 + chargeIWrt24 + chargeIWrt25 + chargeIWrt26 + chargeIWrt27 + chargeIWrt29 + chargeIWrt30 + chargeIWrt31 + chargeIWrt32 + chargeIWrt33 + chargeIWrt34 + chargeIWrt35 + chargeIWrt36 + chargeIWrt37 + chargeIWrt38 + chargeIWrt39 + chargeIWrt40 + chargeIWrt41 + chargeIWrt42 + chargeIWrt43 + chargeIWrt44 + chargeIWrt45 + chargeIWrt46 + chargeIWrt47 + chargeIWrt48 + chargeIWrt49 + chargeIWrt50 + chargeIWrt51 + chargeIWrt52 + chargeIWrt53 + chargeIWrt54 + chargeIWrt55 + chargeIWrt56 + chargeIWrt57 + chargeIWrt58 + chargeIWrt59 + chargeIWrt60 + chargeIWrt61 + chargeIWrt62 + chargeIWrt63 + chargeIWrt64)*Vvdd
+}
+
+
+alias measurement LeakStat{
+run dc (oppoint='logfile)
+
+real Static1 = I(Vtest1)
+real Static2 = I(Vtest2)
+real Static3 = I(Vtest3)
+real Static4 = I(Vtest4)
+real Static5 = I(Vtest5)
+real Static6 = I(Vtest6)
+real Static7 = I(Vtest7)
+real Static8 = I(Vtest8)
+real Static9 = I(Vtest9)
+real Static10 = I(Vtest10)
+real Static11 = I(Vtest11)
+real Static12 = I(Vtest12)
+real Static13 = I(Vtest13)
+real Static14 = I(Vtest14)
+real Static15 = I(Vtest15)
+real Static16 = I(Vtest16)
+real Static17 = I(Vtest17)
+real Static18 = I(Vtest18)
+real Static19 = I(Vtest19)
+real Static20 = I(Vtest20)
+real Static21 = I(Vtest21)
+real Static22 = I(Vtest22)
+real Static23 = I(Vtest23)
+real Static24 = I(Vtest24)
+real Static25 = I(Vtest25)
+real Static26 = I(Vtest26)
+real Static27 = I(Vtest27)
+real Static29 = I(Vtest29)
+real Static30 = I(Vtest30)
+real Static31 = I(Vtest31)
+real Static32 = I(Vtest32)
+real Static33 = I(Vtest33)
+real Static34 = I(Vtest34)
+real Static35 = I(Vtest35)
+real Static36 = I(Vtest36)
+real Static37 = I(Vtest37)
+real Static38 = I(Vtest38)
+real Static39 = I(Vtest39)
+real Static40 = I(Vtest40)
+real Static41 = I(Vtest41)
+real Static42 = I(Vtest42)
+real Static43 = I(Vtest43)
+real Static44 = I(Vtest44)
+real Static45 = I(Vtest45)
+real Static46 = I(Vtest46)
+real Static47 = I(Vtest47)
+real Static48 = I(Vtest48)
+real Static49 = I(Vtest49)
+real Static50 = I(Vtest50)
+real Static51 = I(Vtest51)
+real Static52 = I(Vtest52)
+real Static53 = I(Vtest53)
+real Static54 = I(Vtest54)
+real Static55 = I(Vtest55)
+real Static56 = I(Vtest56)
+real Static57 = I(Vtest57)
+real Static58 = I(Vtest58)
+real Static59 = I(Vtest59)
+real Static60 = I(Vtest60)
+real Static61 = I(Vtest61)
+real Static62 = I(Vtest62)
+real Static63 = I(Vtest63)
+real Static64 = I(Vtest64)
+
+export real TotalStaticLeakage = (Static1 + Static1 + Static2 + Static3 + Static4 + Static5 + Static6 + Static7 + Static8 + Static9 + Static10 + Static11 + Static12 + Static13 + Static14 + Static15 + Static16 + Static17 + Static18 + Static19 + Static20 + Static21 + Static22 + Static23 + Static24 + Static25 + Static26 + Static27 + Static29 + Static30 + Static31 + Static32 + Static33 + Static34 + Static35 + Static36 + Static37 + Static38 + Static39 + Static40 + Static41 + Static42 + Static43 + Static44 + Static45 + Static46 + Static47 + Static48 + Static49 + Static50 + Static51 + Static52 + Static53 + Static54 + Static55 + Static56 + Static57 + Static58 + Static59 + Static60 + Static61 + Static62 + Static63 + Static64)
+}
+
+
+alias measurement TmpRead{
+run tran (stop = 5n)
+
+export real CurBL = abs(I(Vtest28)@1.7n)
+
+export real TpRd = 1.7n-TpRead
+}
+
+search TpRead from binary(start=1.5n, stop=1.71n, tol=1f){
+run TmpRead
+}while (TmpRead->CurBL > 0.00083)
+
+
+
+alias measurement TmpWrite{
+run tran (stop = 5n)
+
+export real CurX = abs(I(Vtest28)@2.7n)
+
+export real TpWrt = 2.7n - TpWrite
+}
+
+search TpWrite from binary(start=2.4n, stop=2.6999999n, tol=1f){
+run TmpWrite
+}while (TmpWrite->CurX > 0.0045 && TmpWrite->CurX < 0.00465)
+
+
+run PowerRd
+run LeakRd
+run PowerWrt
+run LeakWrt
+run LeakStat
+
+
+print fmt("****Results of 64Bits:****\n") to="Results.csv"
+
+
+print fmt("****Results of 64Bits:****\n") to="Results.csv"
+
+print fmt("Read Latency/%-15e\n", TmpRead->TpRd) addto="Results.csv"
+print fmt("Write Latency/%-15e\n", TmpWrite->TpWrt) addto="Results.csv"
+print fmt("Read Energy/%-15e\n", PowerRd->EnergyRead) addto="Results.csv"
+print fmt("Write Energy/%-15e\n", PowerWrt->EnergyWrite) addto="Results.csv"
+print fmt("Leakage Energy Read/%-15e\n", LeakRd->EnergyLeakRead) addto="Results.csv"
+print fmt("Leakage Energy Write/%-15e\n", LeakWrt->EnergyLeakWrite) addto="Results.csv"
+print fmt("Static Leakage/%-15e\n", LeakStat->TotalStaticLeakage) addto="Results.csv"
+

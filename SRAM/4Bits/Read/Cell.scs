@@ -1,0 +1,68 @@
+*Memoria de uma bitcell
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'TRISTATE.spi'
+.include '6TBitCell.spi'
+.include 'PreCharge.spi'
+.include 'PassTransistor.spi'
+
+.param VPre = 1
+.param Vwd = 1
+.param Vwdb = 0
+
+.param TpPre = 0.5n
+.param TpWl = 1.5n
+
+.param cap = 15f
+
+Vwl1 WL1 Gnd PWL 0 0 '(TpWl+2p)' 0 '(TpWl+3p)' 1 (1.5n+7p) 1 (1.5n+10p) 0
+Vwl2 WL2 Gnd PWL 0 0
+
+Vwdb1 WDB1 Gnd 0
+Vwd1 WD1 Gnd 0
+Vwdb2 WDB2 Gnd 0
+Vwd2 WD2 Gnd 0
+
+*En liga em 1  ENB em 0
+Venb1 ENB1 Gnd PWL 0 1
+Ven1 EN1 Gnd PWL 0 0
+Venb2 ENB2 Gnd PWL 0 1
+Ven2 EN2 Gnd PWL 0 0
+
+Vpre1 PRE1 Gnd PWL 0 1 '(TpPre-1p)' 1 'TpPre' 0 '(TpWl)' 0 '(TpWl+1p)' 1 
+Vpre2 PRE2 Gnd PWL 0 1
+
+Vvdd Vvdd Gnd 'VPre'
+
+Vdd Vdd Gnd 1
+
+Vgnd Gnd 0 0
+
+*Bitcell BC BL BLB WL Gnd Vdd
+X0 BL1 BLB1 WL1 Vdd Gnd BC
+X1 BL2 BLB2 WL1 Vdd Gnd BC
+X2 BL1 BLB1 WL2 Vdd Gnd BC
+X3 BL2 BLB2 WL2 Vdd Gnd BC
+
+*Write Driver
+X4 WD1 BL1 EN1 ENB1 Vdd Gnd TI
+X5 WDB1 BLB1 EN1 ENB1 Vdd Gnd TI
+X6 WD2 BL2 EN2 ENB2 Vdd Gnd TI
+X7 WDB2 BLB2 EN2 ENB2 Vdd Gnd TI
+
+*Pre Charge BL BLB PRE Vdd
+X8 BL1 BLB1 PRE1 Vdd PC
+X9 BL2 BLB2 PRE2 Vdd PC
+
+*Bitlines Capacitance
+Cbl1 BL1 Gnd 'cap'
+Cblb1 BLB1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+Cblb2 BLB2 Gnd 'cap'
+.TRAN 100p 4n
+
+.option method=trap
+.option rawfmt="psfbin"
+.IC V(X0.Q)=1 V(X0.QB)=0 V(BL1)=0 V(BLB1)=1 V(BL2)=0 V(BLB2)=1

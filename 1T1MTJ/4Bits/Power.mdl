@@ -1,0 +1,55 @@
+*Power
+
+alias measurement PowerRd{
+	run tran (stop = 10n)
+
+	export real chargeIRd = avg(integ(sig=I(Vtest1), from=8n, to=8.3n ))
+
+	export real EnergyRead = chargeIRd*Vvdd
+
+	export real PowerRead = EnergyRead*(8.4n-8.1n)
+
+}
+
+alias measurement LeakRd{
+	run tran (stop = 10n)
+
+	export real chargeIRd2 = avg(integ(sig=I(Vtest2), from=8n, to=8.3n ))
+	export real chargeIRd3 = avg(integ(sig=I(Vtest3), from=8n, to=8.3n ))
+	export real chargeIRd4 = avg(integ(sig=I(Vtest4), from=8n, to=8.3n ))
+
+	export real EnergyLeakRead = (chargeIRd2 + chargeIRd3 + chargeIRd4)*Vvdd
+
+	export real PowerLeakRead = EnergyLeakRead*(8.4n-8.1n)
+
+}
+
+alias measurement PowerWrt{
+	run tran (stop = 10n)
+
+	export real chargeIWr = avg(integ(sig=I(Vtest1), from=5.9n, to=6.2n ))
+
+
+	export real EnergyWrite = chargeIWr*Vvdd
+
+	export real PowerWrite = EnergyWrite*(6.1n-5.9n)
+}
+
+alias measurement LeakWrt{
+	run tran (stop = 10n)
+
+	export real chargeIWrt2 = avg(integ(sig=I(Vtest2), from=5.9n, to=6.2n ))
+	export real chargeIWrt3 = avg(integ(sig=I(Vtest3), from=5.9n, to=6.2n ))
+	export real chargeIWrt4 = avg(integ(sig=I(Vtest4), from=5.9n, to=6.2n ))
+
+	export real EnergyLeakWrite = (chargeIWrt2 + chargeIWrt3 + chargeIWrt3)*Vvdd
+
+	export real PowerLeakWrite= EnergyLeakWrite*(8.4n-8.1n)
+
+}
+run PowerRd
+run LeakRd
+
+run PowerWrt
+run LeakWrt
+

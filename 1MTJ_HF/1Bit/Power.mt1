@@ -1,0 +1,7 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* Crossbar one bit'
+PowerWL PowerBL chargeX1 PowerX1 chargeX2 PowerX2 charge1 Power1 PowerWrite 
+alter# 
+1.54991e-12 1.54985e-12 failed failed failed failed -7.86658e-17 6.29327e-17 
+1.54991e-12 2 
+

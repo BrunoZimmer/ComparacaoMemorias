@@ -1,0 +1,23 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:32:38 PM, Thur Jan 21, 2021
+design             :  *Memoria de uma bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  Power
+Analysis Type      :  tran
+Energy_the_fucking_real = 1.84621e-15 
+Power1          = 0 
+Power2          = 5.01536e-19 
+Power3          = 1.84552e-15 
+Power4          = 0 
+Power5          = 0 
+Power6          = 1.89199e-19 
+Power7          = 0 
+Power8          = 0 
+V1              = 1 
+charge1         = 0 
+
+

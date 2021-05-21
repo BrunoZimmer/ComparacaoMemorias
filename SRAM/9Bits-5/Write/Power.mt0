@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '*Memoria de uma bitcell'
+EnergyWrite EnergyWriteLeakage alter# 
+-2.28547e-18 -4.83298e-15 1 
+

@@ -1,0 +1,13 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  11:54:43 AM, Thur Feb 4, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  LeakStatic
+Analysis Type      :  dc
+TotalLeakage    = -6.34975e-24 
+
+

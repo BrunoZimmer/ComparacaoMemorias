@@ -1,0 +1,50 @@
+Exported variables from results directory:  ./MemorySchematic.raw/
+
+date               :  3:31:59 PM, Mon Jan 25, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  PowerRd
+Analysis Type      :  tran
+EnergyRead      = -6.93227e-14 
+PowerRead       = -2.07968e-23 
+chargeIRd       = -4.33267e-14 
+
+
+Measurement Name   :  LeakRd
+Analysis Type      :  tran
+EnergyLeakRead  = -4.6269e-14 
+PowerLeakRead   = -1.38807e-23 
+chargeIRd2      = -5.97169e-15 
+chargeIRd3      = -5.97169e-15 
+chargeIRd4      = -1.47484e-14 
+chargeIRd5      = 3.13051e-15 
+chargeIRd6      = 3.13051e-15 
+chargeIRd7      = -1.47484e-14 
+chargeIRd8      = 3.13051e-15 
+chargeIRd9      = 3.13051e-15 
+
+
+Measurement Name   :  PowerWrt
+Analysis Type      :  tran
+EnergyWrite     = 8.30703e-13 
+PowerWrite      = 1.66141e-22 
+chargeIWr       = 5.1919e-13 
+
+
+Measurement Name   :  LeakWrt
+Analysis Type      :  tran
+EnergyLeakWrite = 1.07434e-13 
+PowerLeakWrite  = 3.22303e-23 
+chargeIWrt2     = 3.2929e-14 
+chargeIWrt3     = 3.2929e-14 
+chargeIWrt4     = 3.41553e-14 
+chargeIWrt5     = -1.67555e-14 
+chargeIWrt6     = -1.67555e-14 
+chargeIWrt7     = 3.41553e-14 
+chargeIWrt8     = -1.67555e-14 
+chargeIWrt9     = -1.67555e-14 
+
+

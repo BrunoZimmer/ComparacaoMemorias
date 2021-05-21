@@ -1,0 +1,15 @@
+*Reading time in a crossbar using HF method
+
+alias measurement TmpRead{
+	run tran (stop = 10n)
+	export real CurBL = abs(I(Vtest5)@8.3n)
+
+	export real TpRd = 0.3n - TpRead
+	export real Escrita_Celula= deltax(sig1=V(in), sig2=V(out),thresh1=0.5, thresh2=0.5)
+
+}
+search TpRead from binary(start=0.1n, stop=0.3n, tol=1f){
+	run TmpRead
+}while (TmpRead->CurBL > 0.00043)
+*esse valor de  corrente depende da resistencia do MTJ e a tensão aplicada
+

@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  4:52:03 PM, Mon Mar 22, 2021
+design             :  * SRAM memory core
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Measurement Name   :  LeakRd
+Analysis Type      :  tran
+EnergyLeakRead  = -2.2151e-13 
+
+
+Measurement Name   :  PowerRd
+Analysis Type      :  tran
+EnergyRead      = 3.26452e-18 
+
+

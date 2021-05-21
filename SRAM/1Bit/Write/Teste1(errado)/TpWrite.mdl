@@ -1,0 +1,32 @@
+*MDL code
+
+alias measurement TpWL{
+	run tran (stop = 5n)
+	export real Ten_wl1 = V(QB)@1.0n
+	export real Ten_wl0 = V(QB)@4n
+
+	export real Dif_tmin_wl = (1n-Tp_wl)
+	export real Tp_wl0 = Tp_wl
+	export real Tp_wl1 = (Tp_wl+3n)
+}
+
+alias measurement TpWrite{
+	run tran (stop = 5n)
+	export real Ten1 = V(BL)@TpWL->Tp_wl0
+	export real Ten0 = V(BL)@TpWL->Tp_wl1
+
+	export real Dif_tmin_en = (1n-Tp_en)
+	export real Tp_en0 = Tp_en
+	export real Tp_en1 = (Tp_en+2.9n)
+
+	export real Tp_write0= deltax(sig1=V(EN), sig2=V(Q),thresh1=0.1, thresh2=0.9, n1 = 3)
+}
+
+search Tp_wl from binary(start=0.1n, stop=1n, tol=0.00001n){
+	run TpWL
+}while (TpWL->Ten_wl1 > 0.9 && TpWL->Ten_wl0 < 0.1 )
+
+search Tp_en from binary(start=0.1n, stop=1n, tol=0.00001n){
+	run TpWrite
+}while (TpWrite->Ten1 < 0.1 && TpWrite->Ten0 > 0.9 )
+

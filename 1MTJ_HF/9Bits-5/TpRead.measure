@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./MRAMHF.raw/
+
+date               :  6:50:56 PM, Tue Jan 26, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpRead-meas_search
+Analysis Type      :  tran
+CurBL              TpRead     @ 1.66745e-09   =  0.000839999     
+TpRd               TpRead     @ 1.66745e-09   =  3.25537e-11     
+
+
+
+
+

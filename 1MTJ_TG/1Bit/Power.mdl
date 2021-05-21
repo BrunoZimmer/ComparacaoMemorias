@@ -1,0 +1,32 @@
+*Power
+
+alias measurement PowerRd{
+	run tran (stop = 10n)
+
+	export real chargeIRd3 = avg(integ(sig=I(Vtest), from=8.1n, to=8.4n ))
+	real chargeRdVwl1 = integ(sig=V(Vwl1), from=8.1n, to=8.4n )
+	real chargeRdVbl1 = integ(sig=V(Vbl1), from=8.1n, to=8.4n )
+
+	export real EnergyRead = chargeIRd3*Vvdd
+
+	export real PowerRead = EnergyRead*(8.4n-8.1n)
+
+}
+
+alias measurement PowerWrt{
+	run tran (stop = 10n)
+
+	export real chargeIWr = avg(integ(sig=I(Vtest), from=5.9n, to=6.1n ))
+	real chargeWrVwl = integ(sig=V(Vwl1), from=5.9n, to=6.1n )
+	real chargeWrVbl = integ(sig=V(Vbl1), from=5.9n, to=6.1n )
+
+
+	export real EnergyWrite = chargeIWr*Vvdd
+
+	export real PowerWrite = EnergyWrite*(6.1n-5.9n)
+}
+
+run PowerRd
+
+run PowerWrt
+

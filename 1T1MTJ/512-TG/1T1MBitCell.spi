@@ -1,0 +1,8 @@
+*tristate
+.include 'MTJT.spi'
+
+.SUBCKT BCTM BL SL WL
+X1 NM BL MTJT
+M_i_1 NM WL SL SL NMOS W=12.630000U L=0.050000U
+.ENDS 
+

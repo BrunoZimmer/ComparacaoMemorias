@@ -1,0 +1,51 @@
+* Crossbar one bit
+
+simulator lang=spice
+
+.include '45nm_LP.pm'
+.include 'MTJT.spi'
+
+
+*pra escrever precisa de uma ddp de 0.9 e pra ler -0.36
+.param cap = 0.5f
+
+.param Vb = 1.6
+.param Vnb = 0
+.param Vhb = Vb/2
+
+.param Vread = 1.6
+
+.param Tpwl = 0.7n
+.param Tpbl = 0.7n
+.param TpRead = 1.7n
+.param TpWrite= 2.7n
+
+Vwl1 WL1 Gnd PWL 0 'Vhb' '(Tpwl-1p)' 'Vhb' 'Tpwl' 'Vb' '(Tpwl+0.3n-1p)' 'Vb' '(Tpwl+0.3n)' 'Vhb' 'TpRead' 'Vhb' '(TpRead+1p)' 'Vread' '(TpRead+0.3n-1p)' 'Vread' '(TpRead+0.3n)' 'Vhb' '(TpWrite-1p)' 'Vhb' '(TpWrite)' 'Vnb' '(TpWrite+0.3n-1p)' 'Vnb' '(TpWrite+0.3n)' 'Vhb' '(3n+Tpwl)' 'Vhb' '(3n+Tpwl+1p)' 'Vread' '(3n+Tpwl+0.3n-1p)' 'Vread' '(3n+Tpwl+0.3n)' 'Vhb'
+
+Vbl1 BL1 Gnd PWL 0 'Vhb' '(Tpbl-1p)' 'Vhb' 'Tpbl' 'Vnb' '(Tpbl+0.3n-1p)' 'Vnb' '(Tpbl+0.3n)' 'Vhb' '(TpWrite-1p)' 'Vhb' '(TpWrite)' 'Vb' '(TpWrite+0.3n-1p)' 'Vb' '(TpWrite+0.3n)' 'Vhb'
+
+Vwl2 WL2 Gnd PWL 0 'Vhb' 
+Vbl2 BL2 Gnd PWL 0 'Vhb' 
+
+Vgnd Gnd 0 0
+
+* Bitcell
+Vx1 WL1 NM1 0
+X1 NM1 BL1 MTJT
+
+Vx2 WL1 NM2 0
+X2 NM2 BL2 MTJT
+
+Vx3 WL2 NM3 0
+X3 NM3 BL1 MTJT
+
+Vx4 WL2 NM4 0
+X4 NM4 BL2 MTJT
+
+*Bitlines Capacitance
+Cbl1 BL1 Gnd 'cap'
+Cbl2 BL2 Gnd 'cap'
+
+.TRAN 10p 5n
+
+.option rawfmt="psfbin"

@@ -1,0 +1,12 @@
+.include '45nm_LP.pm'
+.include 'INV.spi'
+
+.SUBCKT BC BL BLB WL Vdd Gnd
+*Inversor A Y VDD VSS 
+X0 Q QB Vdd Gnd INV
+X1 QB Q Vdd Gnd INV
+*Transistor Drain Gate Source Bulk
+M_i_0 BL WL Q Gnd NMOS_VTL W=0.415000U L=0.050000U
+M_i_1 BLB WL QB Gnd NMOS_VTL W=0.415000U L=0.050000U
+.ENDS 
+

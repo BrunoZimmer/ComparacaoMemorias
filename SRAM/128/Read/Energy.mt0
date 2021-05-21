@@ -1,0 +1,5 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* SRAM memory core'
+EnergyLeakRead alter# 
+-7.41077e-17 1 
+

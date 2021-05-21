@@ -1,0 +1,18 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  12:00:43 PM, Sun Feb 7, 2021
+design             :  * Crossbar
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpWrite-meas_search
+Analysis Type      :  tran
+CurX               TpWrite    @ 8.79576e-10   =  0.00239997     
+TpWrt              TpWrite    @ 8.79576e-10   =  1.20424e-10     
+
+
+
+
+

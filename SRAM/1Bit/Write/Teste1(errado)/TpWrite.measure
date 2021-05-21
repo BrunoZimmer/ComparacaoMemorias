@@ -1,0 +1,31 @@
+Exported variables from results directory:  ./SRAMOneCell.raw/
+
+date               :  7:59:48 AM, Thur Dec 10, 2020
+design             :  *Memoria w/ 1 bitcell
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TpWL-meas_search
+Analysis Type      :  tran
+Dif_tmin_wl        Tp_wl      @ 9.20521e-10   =  7.94792e-11     
+Ten_wl0            Tp_wl      @ 9.20521e-10   =  0.0999973     
+Ten_wl1            Tp_wl      @ 9.20521e-10   =  0.99929     
+Tp_wl0             Tp_wl      @ 9.20521e-10   =  9.20521e-10     
+Tp_wl1             Tp_wl      @ 9.20521e-10   =  3.92052e-09     
+
+
+Measurement Name   :  TpWrite-meas_search
+Analysis Type      :  tran
+Dif_tmin_en        Tp_en      @ 6.95555e-10   =  3.04445e-10     
+Ten0               Tp_en      @ 6.95555e-10   =  0.900006     
+Ten1               Tp_en      @ 6.95555e-10   =  0.0384318     
+Tp_en0             Tp_en      @ 6.95555e-10   =  6.95555e-10     
+Tp_en1             Tp_en      @ 6.95555e-10   =  3.59556e-09     
+Tp_write0          Tp_en      @ 6.95555e-10   =  4.1607e-10     
+
+
+
+
+

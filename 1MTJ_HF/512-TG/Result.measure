@@ -1,0 +1,24 @@
+Exported variables from results directory:  ./Cell.raw/
+
+date               :  11:04:32 PM, Sun Mar 28, 2021
+design             :  * Crossbar one bit
+simulator          :  spectre
+version            :  16.1.0.673.isr14
+
+
+Swept Measurements :
+Measurement Name   :  TmpRead-meas_search
+Analysis Type      :  tran
+CurBL              TpRead     @ 1.69533e-09   =  0.000250022     
+TpRd               TpRead     @ 1.69533e-09   =  4.66869e-12     
+
+
+Measurement Name   :  TmpWrite-meas_search
+Analysis Type      :  tran
+CurBL              TpWrite    @ 2.55764e-09   =  0.00137999     
+TpWrt              TpWrite    @ 2.55764e-09   =  1.42361e-10     
+
+
+
+
+

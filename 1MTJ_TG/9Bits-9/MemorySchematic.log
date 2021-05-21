@@ -1,0 +1,2352 @@
+
+Spectre (R) Circuit Simulator
+Version 16.1.0.673.isr14 64bit -- 30 Mar 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: brunozimmer   Host: itacolomi.lapsi   HostID: 7F0100   PID: 17214
+Memory  available: 318.9391 MB  physical: 33.7036 GB
+Linux   : CentOS Linux release 7.8.2003 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E3-1220 V2 @ 3.10GHz
+All processors running at 3300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        
+System load averages (1min, 5min, 15min) : 118.3 %, 124.8 %, 123.0 %
+
+
+Simulating `MemorySchematic.scs' on itacolomi.lapsi at 8:39:02 AM, Wed Jan 27, 2021 (process id: 17214).
+Current working directory: /home/brunozimmer/Documentos/ComparacaoMemorias/1MTJ_TG/9Bits-9
+Command line:
+    /tools/cadence/SPECTRE161/tools.lnx86/bin/spectre -64 =mdl  \
+        TpWrite.mdl MemorySchematic.scs
+
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Loading /tools/cadence/SPECTRE161/tools.lnx86/spectre/lib/64bit/mdl/libSpectreEH_sh.so ...
+
+Warning from spectre.
+    WARNING (MDL-1452): line 1, column 1: syntax error before or at: *
+            unrecognised statement.
+    WARNING (MDL-1452): line 13, column 1: syntax error before or at: *
+            unrecognised statement.
+    WARNING (MDL-1452): line 13, column 64: syntax error before or at: Ã
+            unrecognised token.
+    WARNING (MDL-1452): line 13, column 65: syntax error before or at: £
+            unrecognised token.
+
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1MTJ_TG/9Bits-9/MemorySchematic.scs
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1MTJ_TG/9Bits-9/45nm_LP.pm
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1MTJ_TG/9Bits-9/MTJT.spi
+Reading file:  /home/brunozimmer/Documentos/ComparacaoMemorias/1MTJ_TG/9Bits-9/TRANSGATE.spi
+Time for NDB Parsing: CPU = 195.839 ms, elapsed = 725.461 ms.
+Time accumulated: CPU = 213.78 ms, elapsed = 725.469 ms.
+Peak resident memory used = 52.9 Mbytes.
+
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /tools/cadence/SPECTRE161/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_299dda is up to date.
+Installed compiled interface for bsource_299dda.
+Existing shared object for module bsource_c88c6a is up to date.
+Installed compiled interface for bsource_c88c6a.
+Existing shared object for module bsource_42ea24 is up to date.
+Installed compiled interface for bsource_42ea24.
+Existing shared object for module bsource_7b7e87 is up to date.
+Installed compiled interface for bsource_7b7e87.
+Existing shared object for module bsource_098211 is up to date.
+Installed compiled interface for bsource_098211.
+Existing shared object for module bsource_ad0f4a is up to date.
+Installed compiled interface for bsource_ad0f4a.
+Time for Elaboration: CPU = 24.303 ms, elapsed = 52.316 ms.
+Time accumulated: CPU = 238.248 ms, elapsed = 778.121 ms.
+Peak resident memory used = 61.2 Mbytes.
+
+
+Time for EDB Visiting: CPU = 4.276 ms, elapsed = 17.3039 ms.
+Time accumulated: CPU = 242.738 ms, elapsed = 795.824 ms.
+Peak resident memory used = 62.1 Mbytes.
+
+
+Global user options:
+             rawfmt = psfbin
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 148
+              bsim4 24    
+     bsource_7b7e87 9     
+     bsource_42ea24 9     
+     bsource_299dda 9     
+     bsource_098211 9     
+     bsource_ad0f4a 9     
+     bsource_c88c6a 9     
+          capacitor 57    
+           resistor 63    
+               vccs 9     
+               vcvs 36    
+            vsource 28    
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 4.067 ms, elapsed = 267.394 ms.
+Time accumulated: CPU = 246.995 ms, elapsed = 1.0636 s.
+Peak resident memory used = 63.7 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+++++++++++++++++
+TpWrite = (0.7n)
+++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.31 ms, elapsed = 4.31085 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             687
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (98.2 %)      1 (98.8 %)      2 (98.8 %)      3 (97.6 %)
+        Other   
+Initial condition solution time: CPU = 4.377 ms, elapsed = 4.37999 ms.
+Intrinsic tran analysis time:    CPU = 431.568 ms, elapsed = 815.176 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 438.289 ms, elapsed = 823.188 ms.
+Time accumulated: CPU = 693.766 ms, elapsed = 2.05238 s.
+Peak resident memory used = 67.6 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    271 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 1 ) :
+CurX=0.00259604
+TpWrt=3e-10
+
+++++++++++++++++
+TpWrite = (0.9n)
+++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.187 ms, elapsed = 4.19283 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             657
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (98.4 %)      1 (99.2 %)      2 (98.8 %)      3 (98.4 %)
+        Other   
+Initial condition solution time: CPU = 4.241 ms, elapsed = 4.30608 ms.
+Intrinsic tran analysis time:    CPU = 409.308 ms, elapsed = 786.521 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 415.433 ms, elapsed = 793.439 ms.
+Time accumulated: CPU = 1.1189 s, elapsed = 2.85671 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 2 ) :
+CurX=0.00446443
+TpWrt=1e-10
+
++++++++++++++++
+TpWrite = 8e-10
++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.27 ms, elapsed = 4.27604 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9.
+Zero diagonal found in Jacobian at `X3.elim1:p' and `X3.n50'.
+.
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             663
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (98.3 %)      1 (98.7 %)      2 (98.3 %)      3 (98.0 %)
+        Other   
+Initial condition solution time: CPU = 4.324 ms, elapsed = 4.3869 ms.
+Intrinsic tran analysis time:    CPU = 406.771 ms, elapsed = 532.906 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 413.269 ms, elapsed = 541.05 ms.
+Time accumulated: CPU = 1.54174 s, elapsed = 3.41181 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    255 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 3 ) :
+CurX=0.00259618
+TpWrt=2e-10
+
++++++++++++++++++
+TpWrite = 8.5e-10
++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.23 ms, elapsed = 4.25887 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             661
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (98.7 %)      1 (99.0 %)      2 (98.7 %)      3 (98.4 %)
+        Other   
+Initial condition solution time: CPU = 4.303 ms, elapsed = 4.40979 ms.
+Intrinsic tran analysis time:    CPU = 418.199 ms, elapsed = 762.701 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 424.692 ms, elapsed = 770.82 ms.
+Time accumulated: CPU = 1.97583 s, elapsed = 4.1956 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    253 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 4 ) :
+CurX=0.00259148
+TpWrt=1.5e-10
+
+++++++++++++++++++
+TpWrite = 8.75e-10
+++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.34 ms, elapsed = 4.3509 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (98.9 %)      1 (99.1 %)      2 (98.9 %)      3 (98.5 %)
+        Other   
+Initial condition solution time: CPU = 4.393 ms, elapsed = 4.41313 ms.
+Intrinsic tran analysis time:    CPU = 414.846 ms, elapsed = 827.223 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 421.228 ms, elapsed = 842.449 ms.
+Time accumulated: CPU = 2.40651 s, elapsed = 5.05967 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 5 ) :
+CurX=0.00261214
+TpWrt=1.25e-10
+
++++++++++++++++++++
+TpWrite = 8.875e-10
++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.237 ms, elapsed = 4.34804 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             666
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.1 %)      1 (99.3 %)      2 (99.1 %)      3 (98.7 %)
+        Other   
+Initial condition solution time: CPU = 4.319 ms, elapsed = 6.64997 ms.
+Intrinsic tran analysis time:    CPU = 419.191 ms, elapsed = 908.388 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 425.769 ms, elapsed = 923.235 ms.
+Time accumulated: CPU = 2.84161 s, elapsed = 5.99243 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    250 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 6 ) :
+CurX=0.00446918
+TpWrt=1.125e-10
+
+++++++++++++++++++++
+TpWrite = 8.8125e-10
+++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 5.011 ms, elapsed = 6.78587 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.2 %)      1 (99.4 %)      2 (99.2 %)      3 (98.7 %)
+        Other   
+Initial condition solution time: CPU = 5.076 ms, elapsed = 6.86121 ms.
+Intrinsic tran analysis time:    CPU = 415.515 ms, elapsed = 718.496 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 422.64 ms, elapsed = 727.603 ms.
+Time accumulated: CPU = 3.27358 s, elapsed = 6.72956 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 7 ) :
+CurX=0.00281267
+TpWrt=1.1875e-10
+
++++++++++++++++++++++
+TpWrite = 8.78125e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.473 ms, elapsed = 12.4619 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9.
+Zero diagonal found in Jacobian at `X2.elim2:p' and `X2.n51'.
+.
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             666
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.67 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.3 %)      1 (99.4 %)      2 (99.3 %)      3 (98.9 %)
+        Other   
+Initial condition solution time: CPU = 4.572 ms, elapsed = 12.665 ms.
+Intrinsic tran analysis time:    CPU = 423.285 ms, elapsed = 746.239 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 430.348 ms, elapsed = 765.927 ms.
+Time accumulated: CPU = 3.71367 s, elapsed = 7.51691 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    253 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 8 ) :
+CurX=0.00266145
+TpWrt=1.21875e-10
+
++++++++++++++++++++++
+TpWrite = 8.76563e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.832 ms, elapsed = 4.86398 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9.
+Zero diagonal found in Jacobian at `X2.elim2:p' and `X2.n51'.
+.
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             666
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.67 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.4 %)      1 (99.5 %)      2 (99.2 %)      3 (99.0 %)
+        Other   
+Initial condition solution time: CPU = 4.888 ms, elapsed = 4.98104 ms.
+Intrinsic tran analysis time:    CPU = 417.773 ms, elapsed = 777.516 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 424.812 ms, elapsed = 786.589 ms.
+Time accumulated: CPU = 4.14786 s, elapsed = 8.31381 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    253 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 9 ) :
+CurX=0.00263324
+TpWrt=1.23437e-10
+
++++++++++++++++++++++
+TpWrite = 8.77344e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+
+Notice from spectre during IC analysis, during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence.
+
+DC simulation time: CPU = 4.394 ms, elapsed = 5.97882 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.4 %)      1 (99.5 %)      2 (99.2 %)      3 (99.1 %)
+        Other   
+Initial condition solution time: CPU = 4.458 ms, elapsed = 6.11901 ms.
+Intrinsic tran analysis time:    CPU = 417.886 ms, elapsed = 768.724 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 424.71 ms, elapsed = 778.85 ms.
+Time accumulated: CPU = 4.58197 s, elapsed = 9.10304 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 10 ) :
+CurX=0.00264379
+TpWrt=1.22656e-10
+
++++++++++++++++++++++
+TpWrite = 8.77734e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.197 ms, elapsed = 4.19998 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.6 %)      2 (99.3 %)      3 (99.2 %)
+        Other   
+Initial condition solution time: CPU = 4.25 ms, elapsed = 4.30584 ms.
+Intrinsic tran analysis time:    CPU = 423.112 ms, elapsed = 979.862 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 429.443 ms, elapsed = 987.971 ms.
+Time accumulated: CPU = 5.02088 s, elapsed = 10.1106 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 11 ) :
+CurX=0.00264907
+TpWrt=1.22266e-10
+
+++++++++++++++++++++
+TpWrite = 8.7793e-10
+++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.325 ms, elapsed = 4.35209 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.5 %)      2 (99.3 %)      3 (99.2 %)
+        Other   
+Initial condition solution time: CPU = 4.4 ms, elapsed = 4.43721 ms.
+Intrinsic tran analysis time:    CPU = 416.823 ms, elapsed = 847.017 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 423.268 ms, elapsed = 863.156 ms.
+Time accumulated: CPU = 5.45357 s, elapsed = 10.9987 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 12 ) :
+CurX=0.00265442
+TpWrt=1.2207e-10
+
++++++++++++++++++++++
+TpWrite = 8.77832e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.328 ms, elapsed = 4.34303 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.4 %)      1 (99.5 %)      2 (99.3 %)      3 (99.1 %)
+        Other   
+Initial condition solution time: CPU = 4.399 ms, elapsed = 4.42314 ms.
+Intrinsic tran analysis time:    CPU = 422.189 ms, elapsed = 1.03047 s.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 428.878 ms, elapsed = 1.04716 s.
+Time accumulated: CPU = 5.89199 s, elapsed = 12.0624 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 13 ) :
+CurX=0.00265091
+TpWrt=1.22168e-10
+
++++++++++++++++++++++
+TpWrite = 8.77783e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.499 ms, elapsed = 4.60792 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.4 %)      1 (99.5 %)      2 (99.4 %)      3 (99.2 %)
+        Other   
+Initial condition solution time: CPU = 4.57 ms, elapsed = 4.73595 ms.
+Intrinsic tran analysis time:    CPU = 417.659 ms, elapsed = 670.424 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 424.472 ms, elapsed = 685.589 ms.
+Time accumulated: CPU = 6.32607 s, elapsed = 12.7612 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 14 ) :
+CurX=0.00264973
+TpWrt=1.22217e-10
+
++++++++++++++++++++++
+TpWrite = 8.77808e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.35 ms, elapsed = 4.36521 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.5 %)      2 (99.4 %)      3 (99.2 %)
+        Other   
+Initial condition solution time: CPU = 4.404 ms, elapsed = 4.47702 ms.
+Intrinsic tran analysis time:    CPU = 413.511 ms, elapsed = 684.276 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 419.926 ms, elapsed = 691.899 ms.
+Time accumulated: CPU = 6.75544 s, elapsed = 13.4646 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 15 ) :
+CurX=0.00265006
+TpWrt=1.22192e-10
+
++++++++++++++++++++++
+TpWrite = 8.77795e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.453 ms, elapsed = 12.4719 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.5 %)      2 (99.4 %)      3 (99.3 %)
+        Other   
+Initial condition solution time: CPU = 4.539 ms, elapsed = 13.0639 ms.
+Intrinsic tran analysis time:    CPU = 413.501 ms, elapsed = 773.048 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 420.296 ms, elapsed = 789.875 ms.
+Time accumulated: CPU = 7.18528 s, elapsed = 14.2651 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 16 ) :
+CurX=0.00264989
+TpWrt=1.22205e-10
+
++++++++++++++++++++++
+TpWrite = 8.77802e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.456 ms, elapsed = 5.59306 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.5 %)      2 (99.4 %)      3 (99.3 %)
+        Other   
+Initial condition solution time: CPU = 4.56 ms, elapsed = 5.76091 ms.
+Intrinsic tran analysis time:    CPU = 409.542 ms, elapsed = 499.113 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 416.54 ms, elapsed = 508.811 ms.
+Time accumulated: CPU = 7.61131 s, elapsed = 14.7845 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 17 ) :
+CurX=0.00264998
+TpWrt=1.22198e-10
+
++++++++++++++++++++++
+TpWrite = 8.77805e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.982 ms, elapsed = 5.10311 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.5 %)      2 (99.5 %)      3 (99.3 %)
+        Other   
+Initial condition solution time: CPU = 5.059 ms, elapsed = 5.25498 ms.
+Intrinsic tran analysis time:    CPU = 414.99 ms, elapsed = 593.525 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 422.359 ms, elapsed = 603.148 ms.
+Time accumulated: CPU = 8.04323 s, elapsed = 15.411 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 18 ) :
+CurX=0.00265002
+TpWrt=1.22195e-10
+
++++++++++++++++++++++
+TpWrite = 8.77803e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 5.112 ms, elapsed = 14.5018 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.6 %)      2 (99.5 %)      3 (99.3 %)
+        Other   
+Initial condition solution time: CPU = 5.191 ms, elapsed = 15.995 ms.
+Intrinsic tran analysis time:    CPU = 409.451 ms, elapsed = 666.616 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 417.205 ms, elapsed = 694.987 ms.
+Time accumulated: CPU = 8.47027 s, elapsed = 16.1259 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 19 ) :
+CurX=0.00265
+TpWrt=1.22197e-10
+
++++++++++++++++++++++
+TpWrite = 8.77804e-10
++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 5.103 ms, elapsed = 7.38192 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.6 %)      2 (99.5 %)      3 (99.3 %)
+        Other   
+Initial condition solution time: CPU = 5.198 ms, elapsed = 14.4601 ms.
+Intrinsic tran analysis time:    CPU = 420.809 ms, elapsed = 824.298 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 428.077 ms, elapsed = 843.318 ms.
+Time accumulated: CPU = 8.90838 s, elapsed = 16.9802 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Value of Exported Variables in this iteration of the Search loop ( iteration = 20 ) :
+CurX=0.00265001
+TpWrt=1.22196e-10
+
++++++++++++++++++++++++++++++++++++++++++++++
+Optimization completed. TpWrite = 8.77803e-10
++++++++++++++++++++++++++++++++++++++++++++++
+
+****************************************************************
+Transient Analysis `TmpWrite-000_TmpWrite': time = (0 s -> 8 ns)
+****************************************************************
+DC simulation time: CPU = 4.551 ms, elapsed = 10.906 ms.
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file MemorySchematic.raw/TmpWrite-000_TmpWrite.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 8 ns
+    step = 8 ps
+    maxstep = 160 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   28      (current)
+                 save   148     (voltage)
+
+...
+
+Notice from spectre at time = 438.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+....
+
+Notice from spectre at time = 598.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+......
+
+Notice from spectre at time = 758.347 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9
+
+Notice from spectre at time = 899 ps during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X9.nFeedback.
+
+.......9..
+
+Notice from spectre at time = 1.01999 ns during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Found trapezoidal ringing on node X14.M_i_3:int_b.
+        Further occurrences of this notice will be suppressed.
+
+.......9.......8.......7.......6.......5.......4.......3.......2.......1.......0
+Number of accepted tran steps =             660
+
+Notice from spectre during transient analysis `TmpWrite-000_TmpWrite', during task `MDLControl'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(X9.nBiStable) = 10.02 V
+I: I(X9.eBiStable:p) = 19.92 A
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  0 (99.5 %)      1 (99.6 %)      2 (99.5 %)      3 (99.4 %)
+        Other   
+Initial condition solution time: CPU = 4.637 ms, elapsed = 11.0669 ms.
+Intrinsic tran analysis time:    CPU = 426.451 ms, elapsed = 975.216 ms.
+Total time required for tran analysis `TmpWrite-000_TmpWrite': CPU = 433.484 ms, elapsed = 1.00262 s.
+Time accumulated: CPU = 9.35158 s, elapsed = 18.0007 s.
+Peak resident memory used = 68.5 Mbytes.
+
+
+Notice from spectre during task `MDLControl'.
+    252 notices suppressed.
+
+
+Aggregate audit (8:39:21 AM, Wed Jan 27, 2021):
+Time used: CPU = 9.36 s, elapsed = 18.3 s, util. = 51.1%.
+Time spent in licensing: elapsed = 27.5 ms.
+Peak memory used = 69 Mbytes.
+Simulation started at: 8:39:02 AM, Wed Jan 27, 2021, ended at: 8:39:21 AM, Wed Jan 27, 2021, with elapsed time (wall clock): 18.3 s.
+spectre completes with 0 errors, 4 warnings, and 169 notices.

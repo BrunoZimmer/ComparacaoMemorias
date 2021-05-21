@@ -1,0 +1,20 @@
+*Power
+alias measurement Energy{
+	run tran (stop = 3n)
+
+	export real EnergyWrite = integ(sig=I(Vdd9), from=1.8n, to=2.1n )
+
+	real Energy2 = integ(sig=I(Vdd2), from=1.8n, to=2.1n )
+	real Energy3 = integ(sig=I(Vdd3), from=1.8n, to=2.1n )
+	real Energy4 = integ(sig=I(Vdd4), from=1.8n, to=2.1n )
+	real Energy5 = integ(sig=I(Vdd5), from=1.8n, to=2.1n )
+	real Energy6 = integ(sig=I(Vdd6), from=1.8n, to=2.1n )
+	real Energy7 = integ(sig=I(Vdd7), from=1.8n, to=2.1n )
+	real Energy8 = integ(sig=I(Vdd8), from=1.8n, to=2.1n )
+	real Energy9 = integ(sig=I(Vdd1), from=1.8n, to=2.1n )
+
+	export real EnergyWriteLeakage = Energy2 + Energy3 + Energy4 + Energy5 + Energy6 + Energy7 + Energy8 + Energy9
+}
+
+run Energy
+

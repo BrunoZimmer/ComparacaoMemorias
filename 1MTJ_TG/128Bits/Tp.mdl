@@ -1,0 +1,12 @@
+alias measurement TmpWrite{
+run tran (stop = 10n)
+
+export real CurX = abs(I(Vtest60)@6n)
+
+export real TpWrt = 1n - TpWrite
+}
+
+search TpWrite from binary(start=0.6n, stop=0.8n, tol=1f){
+run TmpWrite
+}while (TmpWrite->CurX < 0.0023 && TmpWrite->CurX > 0.0018)
+

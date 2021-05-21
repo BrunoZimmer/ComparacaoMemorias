@@ -1,0 +1,4 @@
+$ Simulator: spectre (ver. 16.1.0.673.isr14)
+.title '* Crossbar one bit'
+index TpWrite CurX TpWrt alter# 
+1 8.79624e-10 0.00264998 1.20376e-10 6 
